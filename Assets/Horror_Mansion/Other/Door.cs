@@ -12,6 +12,11 @@ public class Door : MonoBehaviour
     private Quaternion openRot;
     public Text txt;
 
+    [SerializeField] private AudioSource lockedAudio;
+    [SerializeField] private AudioSource openAudio;
+
+    [SerializeField] private bool locked;
+
     void Start()
     {
         defaultRot = transform.rotation;
@@ -22,8 +27,7 @@ public class Door : MonoBehaviour
     {
         if (ePressed && trig)
         {
-            open = !open;
-            ePressed = false;
+            TryToggleDoor();
         }
 
         if (open && Quaternion.Angle(transform.rotation, openRot) > rotationTolerance)
@@ -37,29 +41,60 @@ public class Door : MonoBehaviour
 
         if (trig)
         {
-            if (open)
-            {
-                txt.text = "Close E";
-            }
-            else
-            {
-                txt.text = "Open E";
-            }
+            UpdateUIText();
         }
+    }
+
+    void TryToggleDoor()
+    {
+        if (!locked) // Check if the door is not locked
+        {
+            ToggleDoorState();
+        }
+        else
+        {
+            HandleLockedDoor();
+        }
+    }
+
+    void ToggleDoorState()
+    {
+        openAudio.Play();
+        open = !open;
+        ePressed = false;
+    }
+
+    void HandleLockedDoor()
+    {
+        lockedAudio.Play();
+        // Door is locked, provide feedback or take appropriate action
+        Debug.Log("The door is locked.");
+        ePressed = false;
+    }
+
+    void UpdateUIText()
+    {
+        if (open)
+        {
+            txt.text = "Close E";
+        }
+        else
+        {
+            txt.text = "Open E";
+        }
+    }
+    public void CloseDoor()
+    {
+        lockedAudio.Play();
+        open = false;
+        locked = true;
     }
 
     private void OnTriggerEnter(Collider coll)
     {
         if (coll.CompareTag("Player"))
         {
-            if (!open)
-            {
-                txt.text = "Close E";
-            }
-            else
-            {
-                txt.text = "Open E";
-            }
+            UpdateUIText();
             trig = true;
         }
     }
