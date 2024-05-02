@@ -17,17 +17,16 @@ public class TotalHorrorScript : MonoBehaviour
     private bool canChase = false;
     private bool isBreathing = false;
 
+    private void Start()
+    {
+        breathing.Play();
+    }
+
     private void Update()
     {
         if (player != null && canChase)
         {
-            if (isBreathing)
-            {
-                breathing.Stop();
-                screech.Play();
-                jumpscare.Play();
-                isBreathing = false;
-            }
+            
 
             Vector3 direction = (player.position - transform.position).normalized;
             transform.position += direction * speed * Time.deltaTime;
@@ -57,9 +56,14 @@ public class TotalHorrorScript : MonoBehaviour
             Debug.Log("Player");
             canChase = true;
             anim.SetTrigger("walk");
+            breathing.Stop();
+
+            screech.Play();
+            jumpscare.Play();
+            isBreathing = false;
 
             // Start breathing audio with fade-in effect
-            StartCoroutine(FadeInBreathingAudio());
+            //StartCoroutine(FadeInBreathingAudio());
         }
     }
 
