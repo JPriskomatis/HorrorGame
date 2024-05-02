@@ -12,8 +12,9 @@ public class Door : MonoBehaviour
     private Quaternion openRot;
     public Text txt;
 
-    [SerializeField] private AudioSource lockedAudio;
+    [SerializeField] private AudioSource closeAudio;
     [SerializeField] private AudioSource openAudio;
+    [SerializeField] private AudioSource lockedAudio;
 
     [SerializeField] private bool locked;
 
@@ -59,17 +60,25 @@ public class Door : MonoBehaviour
 
     void ToggleDoorState()
     {
-        openAudio.Play();
+        if (!open)
+        {
+            openAudio.Play();
+        }
+        else
+        {
+            closeAudio.Play();
+        }
         open = !open;
+        
         ePressed = false;
     }
 
     void HandleLockedDoor()
     {
-        lockedAudio.Play();
         // Door is locked, provide feedback or take appropriate action
         Debug.Log("The door is locked.");
         ePressed = false;
+        lockedAudio.Play();
     }
 
     void UpdateUIText()
@@ -85,7 +94,7 @@ public class Door : MonoBehaviour
     }
     public void CloseDoor()
     {
-        lockedAudio.Play();
+        closeAudio.Play();
         open = false;
         locked = true;
     }
