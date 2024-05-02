@@ -6,6 +6,7 @@ using UnityEngine;
 public class BathCurtain : MonoBehaviour, IInteractable
 {
     [SerializeField] private Animator anim;
+    [SerializeField] private AudioSource curtainOpenAudio;
     private TextAppear textAppear;
 
     private void Start()
@@ -17,6 +18,7 @@ public class BathCurtain : MonoBehaviour, IInteractable
         if (Input.GetKeyDown(KeyCode.E))
         {
             anim.SetBool("Open", true);
+            curtainOpenAudio.Play();
         }
     }
 
