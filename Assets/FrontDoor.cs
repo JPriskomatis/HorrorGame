@@ -26,4 +26,10 @@ public class FrontDoor : MonoBehaviour, IInteractable
     {
         textAppear.RemoveText();
     }
+
+    public void CloseDoor()
+    {
+        anim.SetBool("Open", false);
+        anim.SetBool("Close", true);
+    }
 }
