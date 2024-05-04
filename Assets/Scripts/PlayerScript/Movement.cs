@@ -13,6 +13,8 @@ public class Movement : MonoBehaviour
     [SerializeField] float gravity = -30f;
     [SerializeField] Transform groundCheck;
     [SerializeField] LayerMask ground;
+    
+    
 
     [SerializeField] private AudioSource footstepsAudio;
     [SerializeField] private AudioClip stoneFootstepSound;
