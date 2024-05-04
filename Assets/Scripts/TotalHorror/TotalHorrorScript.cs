@@ -14,6 +14,7 @@ public class TotalHorrorScript : MonoBehaviour
     [SerializeField] private float lookSpeed = 10f;
     [SerializeField] private float activationDistance = 0.1f; // Distance threshold for activating the function
     [SerializeField] private float fadeDuration = 5f; // Duration of the fade-in effect
+    [SerializeField] private GameObject floor;
 
     private bool canChase = false;
     private bool isBreathing = false;
@@ -74,6 +75,8 @@ public class TotalHorrorScript : MonoBehaviour
     private void DeactivateGameObject()
     {
         heartBeat.InitiateHeartbeat();
+        Component ScrpiptToRemove = floor.GetComponent<SpawnTotalHorror>();
+        Destroy(ScrpiptToRemove);
         gameObject.SetActive(false);
     }
 
