@@ -7,6 +7,7 @@ public class TotalHorrorScript : MonoBehaviour
     [SerializeField] private AudioSource breathing;
     [SerializeField] private AudioSource screech;
     [SerializeField] private AudioSource jumpscare;
+    [SerializeField] private HeartbeatAudio heartBeat;
 
     public Transform player;
     public float speed = 5f;
@@ -16,10 +17,13 @@ public class TotalHorrorScript : MonoBehaviour
 
     private bool canChase = false;
     private bool isBreathing = false;
+    private bool hasPlayedAudio = false; // Flag to track if audio clips have been played
+
 
     private void Start()
     {
         breathing.Play();
+        heartBeat = FindObjectOfType<HeartbeatAudio>();
     }
 
     private void Update()
@@ -49,9 +53,10 @@ public class TotalHorrorScript : MonoBehaviour
         }
     }
 
+
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && !hasPlayedAudio) // Check if player triggered and audio hasn't been played yet
         {
             Debug.Log("Player");
             canChase = true;
@@ -62,13 +67,13 @@ public class TotalHorrorScript : MonoBehaviour
             jumpscare.Play();
             isBreathing = false;
 
-            // Start breathing audio with fade-in effect
-            //StartCoroutine(FadeInBreathingAudio());
+            hasPlayedAudio = true; // Set the flag to true to indicate that audio has been played
         }
     }
 
     private void DeactivateGameObject()
     {
+        heartBeat.InitiateHeartbeat();
         gameObject.SetActive(false);
     }
 
