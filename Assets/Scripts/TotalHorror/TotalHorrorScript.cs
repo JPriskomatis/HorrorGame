@@ -67,6 +67,7 @@ public class TotalHorrorScript : MonoBehaviour
             screech.Play();
             jumpscare.Play();
             isBreathing = false;
+            heartBeat.InitiateHeartbeat();
 
             hasPlayedAudio = true; // Set the flag to true to indicate that audio has been played
         }
@@ -74,7 +75,7 @@ public class TotalHorrorScript : MonoBehaviour
 
     private void DeactivateGameObject()
     {
-        heartBeat.InitiateHeartbeat();
+        
         Component ScrpiptToRemove = floor.GetComponent<SpawnTotalHorror>();
         Destroy(ScrpiptToRemove);
         gameObject.SetActive(false);
