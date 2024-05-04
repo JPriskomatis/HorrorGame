@@ -7,22 +7,27 @@ public class ToiletScript : MonoBehaviour, IInteractable
 {
     [SerializeField] private Animator anim;
     TextAppear textAppear;
-
+    private bool isOpen;
     private void Start()
     {
         textAppear = GetComponent<TextAppear>();
     }
     public void Interact()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E) && !isOpen)
         {
             anim.SetBool("Open", true);
+            isOpen = true;
         }
     }
 
     public void OnInteractEnter()
     {
-        textAppear.SetText("Open");
+        if (isOpen)
+        {
+            textAppear.SetText("Open");
+
+        }
     }
 
     public void OnInteractExit()
