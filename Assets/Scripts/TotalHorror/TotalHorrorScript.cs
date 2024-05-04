@@ -7,7 +7,7 @@ public class TotalHorrorScript : MonoBehaviour
     [SerializeField] private AudioSource breathing;
     [SerializeField] private AudioSource screech;
     [SerializeField] private AudioSource jumpscare;
-    [SerializeField] private AudioSource heartBeat;
+    [SerializeField] private HeartbeatAudio heartBeat;
 
     public Transform player;
     public float speed = 5f;
@@ -23,6 +23,7 @@ public class TotalHorrorScript : MonoBehaviour
     private void Start()
     {
         breathing.Play();
+        heartBeat = FindObjectOfType<HeartbeatAudio>();
     }
 
     private void Update()
@@ -72,7 +73,7 @@ public class TotalHorrorScript : MonoBehaviour
 
     private void DeactivateGameObject()
     {
-        heartBeat.Play();
+        heartBeat.InitiateHeartbeat();
         gameObject.SetActive(false);
     }
 
