@@ -9,25 +9,37 @@ public class DaggerScript : MonoBehaviour, IInteractable
     private TextAppear textAppear;
     private Vector3 initialPos;
     [SerializeField] private GameObject item;
+    private bool picked;
+
+
     private void Start()
     {
         pickUp = FindObjectOfType<PickUpItem>();
         textAppear = FindObjectOfType<TextAppear>();
         initialPos = gameObject.transform.position;
+
+       
+
+        
     }
+
     public void Interact()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E) && !picked)
         {
+            // Use pickedUpTransform's transform to set position and rotation
+
+            
             pickUp.PickUp(this.gameObject);
-            Instantiate(item, initialPos, Quaternion.identity);
+            //Instantiate(item, initialPos, Quaternion.identity);
             Destroy(this.gameObject);
         }
     }
 
     public void OnInteractEnter()
     {
-        textAppear.SetText("Pickup the Dagger");
+        if (!picked)
+            textAppear.SetText("Pickup the Dagger");
     }
 
     public void OnInteractExit()

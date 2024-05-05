@@ -175,8 +175,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b03602d7716cea4469771b59b711d0bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioMixerGroup: {fileID: 24300002, guid: d071c2c0acfc4aa409291c02c019f627, type: 2}
-  audioSource: {fileID: 0}
 --- !u!1001 &999843
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -726,6 +724,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_2x4_01 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6591656903508432967, guid: a8144ec4634ecf1409075fc85f268fb9, type: 3}
+      propertyPath: m_TagString
+      value: stone
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8144ec4634ecf1409075fc85f268fb9, type: 3}
 --- !u!4 &31528812 stripped
@@ -837,7 +839,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh115444
+  m_Name: pb_Mesh909312
   serializedVersion: 10
   m_SubMeshes: []
   m_Shapes:
@@ -1026,7 +1028,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 33405438}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6eade0480bd2e3146a807adf52d4c057, type: 3}
   m_Name: 
@@ -6820,7 +6822,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh114060
+  m_Name: pb_Mesh907852
   serializedVersion: 10
   m_SubMeshes: []
   m_Shapes:
@@ -7040,6 +7042,10 @@ PrefabInstance:
     - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_Name
       value: Floor_4x4_01 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
+      propertyPath: m_TagString
+      value: stone
       objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
@@ -7283,6 +7289,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_4x2_01
       objectReference: {fileID: 0}
+    - target: {fileID: 6776210907159168225, guid: 74cafe5d7bec12446965c9a3213b8d72, type: 3}
+      propertyPath: m_TagString
+      value: stone
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74cafe5d7bec12446965c9a3213b8d72, type: 3}
 --- !u!4 &91937024 stripped
@@ -7313,6 +7323,10 @@ PrefabInstance:
     - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_Name
       value: Floor_4x4_01 (57)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
+      propertyPath: m_TagString
+      value: stone
       objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
@@ -7383,6 +7397,10 @@ PrefabInstance:
     - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_Name
       value: Floor_4x4_01 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
+      propertyPath: m_TagString
+      value: stone
       objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
@@ -8251,6 +8269,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_4x4_01 (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
+      propertyPath: m_TagString
+      value: stone
+      objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
       value: 95
@@ -8437,6 +8459,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_4x4_01 (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
+      propertyPath: m_TagString
+      value: stone
+      objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
       value: 96
@@ -8519,7 +8545,7 @@ Transform:
   - {fileID: 279711944}
   - {fileID: 2029151202}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &149709198
 GameObject:
@@ -9299,6 +9325,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_4x4_01 (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
+      propertyPath: m_TagString
+      value: stone
+      objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
       value: 253
@@ -9360,7 +9390,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh113120
+  m_Name: pb_Mesh906850
   serializedVersion: 10
   m_SubMeshes: []
   m_Shapes:
@@ -10365,6 +10395,10 @@ PrefabInstance:
     - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_Name
       value: Floor_4x4_01 (43)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
+      propertyPath: m_TagString
+      value: stone
       objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
@@ -13573,7 +13607,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh116300
+  m_Name: pb_Mesh910190
   serializedVersion: 10
   m_SubMeshes: []
   m_Shapes:
@@ -14649,6 +14683,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_2x4_01 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6591656903508432967, guid: a8144ec4634ecf1409075fc85f268fb9, type: 3}
+      propertyPath: m_TagString
+      value: stone
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8144ec4634ecf1409075fc85f268fb9, type: 3}
 --- !u!4 &389894350 stripped
@@ -14662,7 +14700,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh113628
+  m_Name: pb_Mesh907368
   serializedVersion: 10
   m_SubMeshes: []
   m_Shapes:
@@ -15142,6 +15180,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_4x4_01 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
+      propertyPath: m_TagString
+      value: stone
+      objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
       value: 85
@@ -15528,6 +15570,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_4x4_01 (45)
       objectReference: {fileID: 0}
+    - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
+      propertyPath: m_TagString
+      value: stone
+      objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
       value: 252
@@ -15651,7 +15697,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh114658
+  m_Name: pb_Mesh908486
   serializedVersion: 10
   m_SubMeshes: []
   m_Shapes:
@@ -15995,6 +16041,10 @@ PrefabInstance:
     - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_Name
       value: Floor_4x4_01 (42)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
+      propertyPath: m_TagString
+      value: stone
       objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
@@ -17300,7 +17350,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &476451143
 PrefabInstance:
@@ -17779,6 +17829,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_4x2_01 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6776210907159168225, guid: 74cafe5d7bec12446965c9a3213b8d72, type: 3}
+      propertyPath: m_TagString
+      value: stone
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74cafe5d7bec12446965c9a3213b8d72, type: 3}
 --- !u!4 &508966129 stripped
@@ -17924,7 +17978,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh115150
+  m_Name: pb_Mesh908996
   serializedVersion: 10
   m_SubMeshes: []
   m_Shapes:
@@ -18329,6 +18383,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_4x2_01 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 6776210907159168225, guid: 74cafe5d7bec12446965c9a3213b8d72, type: 3}
+      propertyPath: m_TagString
+      value: stone
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74cafe5d7bec12446965c9a3213b8d72, type: 3}
 --- !u!4 &521489338 stripped
@@ -18684,7 +18742,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh114542
+  m_Name: pb_Mesh908372
   serializedVersion: 10
   m_SubMeshes: []
   m_Shapes:
@@ -18843,6 +18901,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_4x4_01 (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
+      propertyPath: m_TagString
+      value: stone
+      objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
       value: 186
@@ -18977,6 +19039,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_4x4_01 (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
+      propertyPath: m_TagString
+      value: stone
+      objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
       value: 102
@@ -19100,6 +19166,10 @@ PrefabInstance:
     - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_Name
       value: Floor_4x4_01 (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
+      propertyPath: m_TagString
+      value: stone
       objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
@@ -19265,7 +19335,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh113452
+  m_Name: pb_Mesh907194
   serializedVersion: 10
   m_SubMeshes: []
   m_Shapes:
@@ -20038,6 +20108,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_4x4_01 (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
+      propertyPath: m_TagString
+      value: stone
+      objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
       value: 175
@@ -20531,7 +20605,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh114740
+  m_Name: pb_Mesh908566
   serializedVersion: 10
   m_SubMeshes: []
   m_Shapes:
@@ -20694,6 +20768,10 @@ PrefabInstance:
     - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_Name
       value: Floor_4x4_01 (55)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
+      propertyPath: m_TagString
+      value: stone
       objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
@@ -20963,6 +21041,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_4x4_01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
+      propertyPath: m_TagString
+      value: stone
+      objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
       value: 80
@@ -21024,7 +21106,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh113500
+  m_Name: pb_Mesh907242
   serializedVersion: 10
   m_SubMeshes: []
   m_Shapes:
@@ -21240,7 +21322,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh113806
+  m_Name: pb_Mesh907556
   serializedVersion: 10
   m_SubMeshes: []
   m_Shapes:
@@ -21721,6 +21803,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_4x4_01 (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
+      propertyPath: m_TagString
+      value: stone
+      objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
       value: 196
@@ -21848,6 +21934,10 @@ PrefabInstance:
     - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_Name
       value: Floor_4x4_01 (59)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
+      propertyPath: m_TagString
+      value: stone
       objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
@@ -22340,6 +22430,10 @@ PrefabInstance:
     - target: {fileID: 1204967510069863273, guid: d13b1ac24e1dd44438e2e34a213e02d2, type: 3}
       propertyPath: m_Name
       value: Front_Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 1204967510069863273, guid: d13b1ac24e1dd44438e2e34a213e02d2, type: 3}
+      propertyPath: m_TagString
+      value: stone
       objectReference: {fileID: 0}
     - target: {fileID: 2014014190966651347, guid: d13b1ac24e1dd44438e2e34a213e02d2, type: 3}
       propertyPath: m_RootOrder
@@ -22993,7 +23087,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1001 &715052317
 PrefabInstance:
@@ -23712,7 +23806,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh113466
+  m_Name: pb_Mesh907208
   serializedVersion: 10
   m_SubMeshes: []
   m_Shapes:
@@ -24077,6 +24171,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_4x4_01 (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
+      propertyPath: m_TagString
+      value: stone
+      objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
       value: 182
@@ -24154,7 +24252,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7896352015324699140, guid: cc1527737d270034aa8683adacb9d1c5, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7896352015324699140, guid: cc1527737d270034aa8683adacb9d1c5, type: 3}
       propertyPath: m_LocalScale.x
@@ -24255,13 +24353,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 756832992}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.77, y: 1.029, z: -24.462}
+  m_LocalPosition: {x: 6.14, y: 1.029, z: -24.454}
   m_LocalScale: {x: 0.92045, y: 0.92045, z: 0.92045}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1090369970}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &756832995
 MonoBehaviour:
@@ -24285,7 +24383,7 @@ MonoBehaviour:
   groundCheck: {fileID: 2013380458}
   ground:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   footstepsAudio: {fileID: 756832996}
   stoneFootstepSound: {fileID: 8300000, guid: b63426b2f7d21ba489c7e0468f920f83, type: 3}
   grassFootstepSound: {fileID: 8300000, guid: 8fc007564d1e2834395ce5d3c40b4b47, type: 3}
@@ -25341,7 +25439,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh115508
+  m_Name: pb_Mesh909376
   serializedVersion: 10
   m_SubMeshes: []
   m_Shapes:
@@ -25495,7 +25593,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh114462
+  m_Name: pb_Mesh908292
   serializedVersion: 10
   m_SubMeshes: []
   m_Shapes:
@@ -26877,6 +26975,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_4x4_01 (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
+      propertyPath: m_TagString
+      value: stone
+      objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
       value: 189
@@ -27160,6 +27262,10 @@ PrefabInstance:
     - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
+      propertyPath: m_TagString
+      value: stone
       objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
@@ -27715,7 +27821,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3695292271955389219, guid: cf6e5b6e69d4b66469a885a38d3c4cd8, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3695292271955389219, guid: cf6e5b6e69d4b66469a885a38d3c4cd8, type: 3}
       propertyPath: m_LocalScale.x
@@ -29006,6 +29112,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_4x4_01 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
+      propertyPath: m_TagString
+      value: stone
+      objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
       value: 93
@@ -29600,6 +29710,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_2x4_01
       objectReference: {fileID: 0}
+    - target: {fileID: 6591656903508432967, guid: a8144ec4634ecf1409075fc85f268fb9, type: 3}
+      propertyPath: m_TagString
+      value: stone
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8144ec4634ecf1409075fc85f268fb9, type: 3}
 --- !u!4 &922763160 stripped
@@ -29674,6 +29788,10 @@ PrefabInstance:
     - target: {fileID: 6776210907159168225, guid: 74cafe5d7bec12446965c9a3213b8d72, type: 3}
       propertyPath: m_Name
       value: Floor_4x2_01 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6776210907159168225, guid: 74cafe5d7bec12446965c9a3213b8d72, type: 3}
+      propertyPath: m_TagString
+      value: stone
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74cafe5d7bec12446965c9a3213b8d72, type: 3}
@@ -30070,6 +30188,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1572215097}
+  - {fileID: 1056400001}
   m_Father: {fileID: 1090369970}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -31129,6 +31248,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_4x4_01 (54)
       objectReference: {fileID: 0}
+    - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
+      propertyPath: m_TagString
+      value: stone
+      objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
       value: 258
@@ -31261,6 +31384,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_4x4_01 (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
+      propertyPath: m_TagString
+      value: stone
+      objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
       value: 195
@@ -31322,6 +31449,10 @@ PrefabInstance:
     - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_Name
       value: Floor_4x4_01 (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
+      propertyPath: m_TagString
+      value: stone
       objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
@@ -32346,6 +32477,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_4x4_01 (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
+      propertyPath: m_TagString
+      value: stone
+      objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
       value: 97
@@ -32470,6 +32605,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_4x4_01 (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
+      propertyPath: m_TagString
+      value: stone
+      objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
       value: 190
@@ -32531,6 +32670,10 @@ PrefabInstance:
     - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_Name
       value: Floor_4x4_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
+      propertyPath: m_TagString
+      value: stone
       objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
@@ -32885,7 +33028,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh116386
+  m_Name: pb_Mesh910276
   serializedVersion: 10
   m_SubMeshes: []
   m_Shapes:
@@ -33090,6 +33233,37 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ec2dc2d1ae4ea94088617995fb4cc67, type: 3}
+--- !u!1 &1056400000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1056400001}
+  m_Layer: 0
+  m_Name: PlaceHolderItemLeft
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1056400001
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1056400000}
+  m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
+  m_LocalPosition: {x: -0.283, y: -0.156, z: 0.414}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 951868853}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 90}
 --- !u!1001 &1061320088
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33100,6 +33274,10 @@ PrefabInstance:
     - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_Name
       value: Floor_4x4_01 (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
+      propertyPath: m_TagString
+      value: stone
       objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
@@ -34087,6 +34265,10 @@ PrefabInstance:
     - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_Name
       value: Floor_4x4_01 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
+      propertyPath: m_TagString
+      value: stone
       objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
@@ -36203,6 +36385,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_4x2_01 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 6776210907159168225, guid: 74cafe5d7bec12446965c9a3213b8d72, type: 3}
+      propertyPath: m_TagString
+      value: stone
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74cafe5d7bec12446965c9a3213b8d72, type: 3}
 --- !u!4 &1150001853 stripped
@@ -36303,6 +36489,10 @@ PrefabInstance:
     - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_Name
       value: Floor_4x4_01 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
+      propertyPath: m_TagString
+      value: stone
       objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
@@ -36421,7 +36611,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh114484
+  m_Name: pb_Mesh908314
   serializedVersion: 10
   m_SubMeshes: []
   m_Shapes:
@@ -36703,6 +36893,10 @@ PrefabInstance:
     - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_Name
       value: Floor_4x4_01 (50)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
+      propertyPath: m_TagString
+      value: stone
       objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
@@ -37292,6 +37486,10 @@ PrefabInstance:
     - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_Name
       value: Floor_4x4_01 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
+      propertyPath: m_TagString
+      value: stone
       objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
@@ -38080,6 +38278,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_4x4_01 (56)
       objectReference: {fileID: 0}
+    - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
+      propertyPath: m_TagString
+      value: stone
+      objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
       value: 260
@@ -38215,6 +38417,10 @@ PrefabInstance:
     - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_Name
       value: Floor_4x4_01 (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
+      propertyPath: m_TagString
+      value: stone
       objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
@@ -38547,6 +38753,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_4x4_01 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
+      propertyPath: m_TagString
+      value: stone
+      objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
       value: 87
@@ -38666,7 +38876,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh114430
+  m_Name: pb_Mesh908254
   serializedVersion: 10
   m_SubMeshes: []
   m_Shapes:
@@ -39204,6 +39414,10 @@ PrefabInstance:
     - target: {fileID: 6591656903508432967, guid: a8144ec4634ecf1409075fc85f268fb9, type: 3}
       propertyPath: m_Name
       value: Floor_2x4_01 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6591656903508432967, guid: a8144ec4634ecf1409075fc85f268fb9, type: 3}
+      propertyPath: m_TagString
+      value: stone
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8144ec4634ecf1409075fc85f268fb9, type: 3}
@@ -40244,6 +40458,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_4x4_01 (48)
       objectReference: {fileID: 0}
+    - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
+      propertyPath: m_TagString
+      value: stone
+      objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
       value: 255
@@ -40569,7 +40787,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh114588
+  m_Name: pb_Mesh908418
   serializedVersion: 10
   m_SubMeshes: []
   m_Shapes:
@@ -46616,7 +46834,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh116400
+  m_Name: pb_Mesh910290
   serializedVersion: 10
   m_SubMeshes: []
   m_Shapes:
@@ -48836,6 +49054,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_4x4_01 (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
+      propertyPath: m_TagString
+      value: stone
+      objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
       value: 254
@@ -49458,6 +49680,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_4x4_01 (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
+      propertyPath: m_TagString
+      value: stone
+      objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
       value: 191
@@ -49549,7 +49775,7 @@ Transform:
   - {fileID: 1194143032}
   - {fileID: 163783866}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &1469896079
 Mesh:
@@ -49557,7 +49783,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh114942
+  m_Name: pb_Mesh908782
   serializedVersion: 10
   m_SubMeshes: []
   m_Shapes:
@@ -49821,6 +50047,10 @@ PrefabInstance:
     - target: {fileID: 6776210907159168225, guid: 74cafe5d7bec12446965c9a3213b8d72, type: 3}
       propertyPath: m_Name
       value: Floor_4x2_01 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6776210907159168225, guid: 74cafe5d7bec12446965c9a3213b8d72, type: 3}
+      propertyPath: m_TagString
+      value: stone
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74cafe5d7bec12446965c9a3213b8d72, type: 3}
@@ -50504,7 +50734,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh115132
+  m_Name: pb_Mesh908978
   serializedVersion: 10
   m_SubMeshes: []
   m_Shapes:
@@ -51041,6 +51271,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_4x4_01 (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
+      propertyPath: m_TagString
+      value: stone
+      objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
       value: 184
@@ -51204,6 +51438,10 @@ PrefabInstance:
     - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_Name
       value: Floor_4x4_01 (58)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
+      propertyPath: m_TagString
+      value: stone
       objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
@@ -53216,6 +53454,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_4x4_01 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
+      propertyPath: m_TagString
+      value: stone
+      objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
       value: 90
@@ -53322,6 +53564,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_4x2_01 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 6776210907159168225, guid: 74cafe5d7bec12446965c9a3213b8d72, type: 3}
+      propertyPath: m_TagString
+      value: stone
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74cafe5d7bec12446965c9a3213b8d72, type: 3}
 --- !u!4 &1617985956 stripped
@@ -53339,6 +53585,10 @@ PrefabInstance:
     - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_Name
       value: Floor_4x4_01 (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
+      propertyPath: m_TagString
+      value: stone
       objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
@@ -53549,6 +53799,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_2x4_01 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 6591656903508432967, guid: a8144ec4634ecf1409075fc85f268fb9, type: 3}
+      propertyPath: m_TagString
+      value: stone
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8144ec4634ecf1409075fc85f268fb9, type: 3}
 --- !u!4 &1665146481 stripped
@@ -53690,6 +53944,10 @@ PrefabInstance:
     - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_Name
       value: Floor_4x4_01 (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
+      propertyPath: m_TagString
+      value: stone
       objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
@@ -53878,6 +54136,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_4x4_01 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
+      propertyPath: m_TagString
+      value: stone
+      objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
       value: 84
@@ -53993,6 +54255,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_4x2_01 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 6776210907159168225, guid: 74cafe5d7bec12446965c9a3213b8d72, type: 3}
+      propertyPath: m_TagString
+      value: stone
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74cafe5d7bec12446965c9a3213b8d72, type: 3}
 --- !u!4 &1684690657 stripped
@@ -54046,7 +54312,7 @@ Transform:
   - {fileID: 1789356611}
   - {fileID: 844414186}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1688800024
 PrefabInstance:
@@ -54201,6 +54467,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lightBulb: {fileID: 1494320650}
   lightbulb2: {fileID: 334799464}
+  ToggleLights: 0
 --- !u!1001 &1704361871
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -54749,7 +55016,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh114560
+  m_Name: pb_Mesh908390
   serializedVersion: 10
   m_SubMeshes: []
   m_Shapes:
@@ -55399,6 +55666,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_4x4_01 (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
+      propertyPath: m_TagString
+      value: stone
+      objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
       value: 99
@@ -56010,6 +56281,10 @@ PrefabInstance:
     - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_Name
       value: Floor_4x4_01 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
+      propertyPath: m_TagString
+      value: stone
       objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
@@ -56831,6 +57106,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_4x4_01 (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
+      propertyPath: m_TagString
+      value: stone
+      objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
       value: 185
@@ -57035,6 +57314,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_2x4_01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6591656903508432967, guid: a8144ec4634ecf1409075fc85f268fb9, type: 3}
+      propertyPath: m_TagString
+      value: stone
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8144ec4634ecf1409075fc85f268fb9, type: 3}
 --- !u!4 &1805893711 stripped
@@ -57117,7 +57400,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6807942113690738883, guid: c31c9587121a10042a14d9ac388b54dc, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6807942113690738883, guid: c31c9587121a10042a14d9ac388b54dc, type: 3}
       propertyPath: m_LocalScale.x
@@ -57864,6 +58147,10 @@ PrefabInstance:
     - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_Name
       value: Floor_4x4_01 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
+      propertyPath: m_TagString
+      value: stone
       objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
@@ -63492,6 +63779,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2037024514}
     m_Modifications:
+    - target: {fileID: 6734155909198770564, guid: 0e0c736e91a5014489e623e43cf32ba4, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570831697458504029, guid: 0e0c736e91a5014489e623e43cf32ba4, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8017885913853340437, guid: 0e0c736e91a5014489e623e43cf32ba4, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8328120252184003826, guid: 0e0c736e91a5014489e623e43cf32ba4, type: 3}
       propertyPath: m_RootOrder
       value: 49
@@ -63539,6 +63838,14 @@ PrefabInstance:
     - target: {fileID: 8707918314897825352, guid: 0e0c736e91a5014489e623e43cf32ba4, type: 3}
       propertyPath: m_Name
       value: Front_Porch
+      objectReference: {fileID: 0}
+    - target: {fileID: 8707918314897825352, guid: 0e0c736e91a5014489e623e43cf32ba4, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8707918314897825352, guid: 0e0c736e91a5014489e623e43cf32ba4, type: 3}
+      propertyPath: m_TagString
+      value: stone
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e0c736e91a5014489e623e43cf32ba4, type: 3}
@@ -63877,7 +64184,7 @@ Transform:
   - {fileID: 1107499915}
   - {fileID: 1694049809}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1892661703
 PrefabInstance:
@@ -63954,6 +64261,10 @@ PrefabInstance:
     - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_Name
       value: Floor_4x4_01 (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
+      propertyPath: m_TagString
+      value: stone
       objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
@@ -66840,6 +67151,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_4x4_01 (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
+      propertyPath: m_TagString
+      value: stone
+      objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
       value: 194
@@ -67862,7 +68177,7 @@ Transform:
   - {fileID: 1751350720}
   - {fileID: 568473254}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2040621183
 PrefabInstance:
@@ -68262,7 +68577,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh114528
+  m_Name: pb_Mesh908358
   serializedVersion: 10
   m_SubMeshes: []
   m_Shapes:
@@ -68469,6 +68784,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_4x2_01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6776210907159168225, guid: 74cafe5d7bec12446965c9a3213b8d72, type: 3}
+      propertyPath: m_TagString
+      value: stone
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74cafe5d7bec12446965c9a3213b8d72, type: 3}
 --- !u!4 &2060436225 stripped
@@ -68486,6 +68805,10 @@ PrefabInstance:
     - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_Name
       value: Floor_4x4_01 (49)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
+      propertyPath: m_TagString
+      value: stone
       objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
@@ -69127,7 +69450,7 @@ Transform:
   - {fileID: 287998596}
   - {fileID: 7841195}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2080244293
 MonoBehaviour:
@@ -69152,6 +69475,10 @@ PrefabInstance:
     - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_Name
       value: Floor_4x4_01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
+      propertyPath: m_TagString
+      value: stone
       objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
@@ -69594,6 +69921,79 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5624207827721667810, guid: c0fbb78f84e2481449802cb16d2def19, type: 3}
   m_PrefabInstance: {fileID: 2129410788}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2130580863
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4632495484826601950, guid: a352c9eb4f128bb409595e3c86e21b70, type: 3}
+      propertyPath: m_Name
+      value: Knife_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 4632495484826601950, guid: a352c9eb4f128bb409595e3c86e21b70, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5404951453901034340, guid: a352c9eb4f128bb409595e3c86e21b70, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5404951453901034340, guid: a352c9eb4f128bb409595e3c86e21b70, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5404951453901034340, guid: a352c9eb4f128bb409595e3c86e21b70, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5404951453901034340, guid: a352c9eb4f128bb409595e3c86e21b70, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5404951453901034340, guid: a352c9eb4f128bb409595e3c86e21b70, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.622
+      objectReference: {fileID: 0}
+    - target: {fileID: 5404951453901034340, guid: a352c9eb4f128bb409595e3c86e21b70, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.513
+      objectReference: {fileID: 0}
+    - target: {fileID: 5404951453901034340, guid: a352c9eb4f128bb409595e3c86e21b70, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -25.548
+      objectReference: {fileID: 0}
+    - target: {fileID: 5404951453901034340, guid: a352c9eb4f128bb409595e3c86e21b70, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9976229
+      objectReference: {fileID: 0}
+    - target: {fileID: 5404951453901034340, guid: a352c9eb4f128bb409595e3c86e21b70, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.06851557
+      objectReference: {fileID: 0}
+    - target: {fileID: 5404951453901034340, guid: a352c9eb4f128bb409595e3c86e21b70, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.007285895
+      objectReference: {fileID: 0}
+    - target: {fileID: 5404951453901034340, guid: a352c9eb4f128bb409595e3c86e21b70, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.0009930241
+      objectReference: {fileID: 0}
+    - target: {fileID: 5404951453901034340, guid: a352c9eb4f128bb409595e3c86e21b70, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 7.858
+      objectReference: {fileID: 0}
+    - target: {fileID: 5404951453901034340, guid: a352c9eb4f128bb409595e3c86e21b70, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -0.833
+      objectReference: {fileID: 0}
+    - target: {fileID: 5404951453901034340, guid: a352c9eb4f128bb409595e3c86e21b70, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0.057
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a352c9eb4f128bb409595e3c86e21b70, type: 3}
 --- !u!1001 &2131518892
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -69790,6 +70190,10 @@ PrefabInstance:
     - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_Name
       value: Floor_4x4_01 (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
+      propertyPath: m_TagString
+      value: stone
       objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
@@ -71928,7 +72332,7 @@ Transform:
   - {fileID: 3716574847046332701}
   - {fileID: 9049715990563637282}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3628539613586855658
 GameObject:
@@ -73584,15 +73988,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7154349256631717667}
-  m_LocalRotation: {x: 0.19360898, y: -0, z: -0, w: 0.9810788}
-  m_LocalPosition: {x: 1.511, y: -0.125, z: -1.647}
+  m_LocalRotation: {x: 0.25343573, y: -0, z: -0, w: 0.9673523}
+  m_LocalPosition: {x: 1.511, y: -0.153, z: -1.793}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2772706617890528703}
   m_Father: {fileID: 1753110129}
   m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 22.327, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 29.362, y: 0, z: 0}
 --- !u!1 &7507722853283351919
 GameObject:
   m_ObjectHideFlags: 0
