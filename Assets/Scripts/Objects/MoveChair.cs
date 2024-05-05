@@ -7,12 +7,13 @@ public class MoveChair : MonoBehaviour, IInteractable
     [SerializeField] private int chairNumber;
     private bool pull;
 
-    private TextAppear textAppear;
 
     private void Start()
     {
         chairPuzzle = FindObjectOfType<ChairPuzzle>();
-        textAppear = FindObjectOfType<TextAppear>();
+        TextAppear.Initialize();
+
+
     }
 
     public void Interact()
@@ -53,11 +54,11 @@ public class MoveChair : MonoBehaviour, IInteractable
 
     public void OnInteractEnter()
     {
-        textAppear.SetText(pull ? "Pull the chair" : "Push the chair");
+        TextAppear.SetText(pull ? "Pull the chair" : "Push the chair");
     }
 
     public void OnInteractExit()
     {
-        textAppear.RemoveText();
+        TextAppear.RemoveText();
     }
 }

@@ -2,10 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FrontDoor : MonoBehaviour, IInteractable
+public class BookOpenDoor : MonoBehaviour, IInteractable
 {
-    [SerializeField] private Animator anim;
-
     private void Start()
     {
         TextAppear.Initialize();
@@ -14,23 +12,17 @@ public class FrontDoor : MonoBehaviour, IInteractable
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            anim.SetBool("Open", true);
+            TextAppear.SetText("Something clicked");
         }
     }
 
     public void OnInteractEnter()
     {
-        TextAppear.SetText("Press E to Open");
+        TextAppear.SetText("Interact");
     }
 
     public void OnInteractExit()
     {
         TextAppear.RemoveText();
-    }
-
-    public void CloseDoor()
-    {
-        anim.SetBool("Open", false);
-        anim.SetBool("Close", true);
     }
 }

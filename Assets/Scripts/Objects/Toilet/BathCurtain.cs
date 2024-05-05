@@ -2,17 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(TextAppear))]
 public class BathCurtain : MonoBehaviour, IInteractable
 {
     [SerializeField] private Animator anim;
     [SerializeField] private AudioSource curtainOpenAudio;
-    private TextAppear textAppear;
+
     private bool isOpen;
 
     private void Start()
     {
-        textAppear = GetComponent<TextAppear>();
+        TextAppear.Initialize();
     }
     public void Interact()
     {
@@ -28,13 +27,13 @@ public class BathCurtain : MonoBehaviour, IInteractable
     {
         if (!isOpen)
         {
-            textAppear.SetText("Draw Curtains");
+            TextAppear.SetText("Draw Curtains");
 
         }
     }
 
     public void OnInteractExit()
     {
-        textAppear.RemoveText();
+        TextAppear.RemoveText();
     }
 }

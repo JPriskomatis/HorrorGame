@@ -1,16 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
+using TMPro;
 
-public class TextAppear : MonoBehaviour
+public static class TextAppear
 {
-    private TextMeshProUGUI text;
-    private PlayerThoughts playerThoughts;
+    private static TextMeshProUGUI text;
+    private static PlayerThoughts playerThoughts;
 
-    private void Start()
+    public static void Initialize()
     {
-        playerThoughts = FindObjectOfType<PlayerThoughts>();
+        playerThoughts = Object.FindObjectOfType<PlayerThoughts>();
 
         // Find the GameObject named "InteractionText" and get its TextMeshPro component
         GameObject interactionTextObject = GameObject.Find("InteractionText");
@@ -28,7 +26,7 @@ public class TextAppear : MonoBehaviour
         }
     }
 
-    public void SetText(string textToPut)
+    public static void SetText(string textToPut)
     {
         if (text != null)
         {
@@ -41,7 +39,7 @@ public class TextAppear : MonoBehaviour
         }
     }
 
-    public void RemoveText()
+    public static void RemoveText()
     {
         if (text != null)
         {

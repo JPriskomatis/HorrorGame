@@ -8,7 +8,6 @@ public class Candle : MonoBehaviour, IInteractable
 
     [SerializeField] private string textToDisplay;
 
-    private TextAppear textAppear;
     private PickUpItem pickUpItem;
 
     private void Start()
@@ -16,7 +15,7 @@ public class Candle : MonoBehaviour, IInteractable
         // Initialize highlight effect
         highlight = GetComponent<HighlightEffect>();
         pickUpItem = FindObjectOfType<PickUpItem>();
-        textAppear = GetComponent<TextAppear>();
+        TextAppear.Initialize();
     }
 
 
@@ -32,13 +31,13 @@ public class Candle : MonoBehaviour, IInteractable
 
     public void Interact()
     {
-        textAppear.SetText(textToDisplay);
+        TextAppear.SetText(textToDisplay);
         if (Input.GetKeyDown(KeyCode.E))
         {
             //highlight.ToggleEmission();
             pickUpItem.PickUp(this.gameObject);
 
-            textAppear.RemoveText();
+            TextAppear.RemoveText();
             Destroy(gameObject);
         }
     }

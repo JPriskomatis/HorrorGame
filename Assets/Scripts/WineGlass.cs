@@ -5,13 +5,13 @@ using UnityEngine;
 public class WineGlass : MonoBehaviour, IInteractable
 {
     [SerializeField] private GameObject wine;
-    private TextAppear textAppear;
+
     private bool canCut;
     private Quest quest;
     [SerializeField] private DoorScript doorScript;
     private void Start()
     {
-        textAppear = FindObjectOfType<TextAppear>();
+        TextAppear.Initialize();
         quest = FindObjectOfType<Quest>();
     }
     public void Interact()
@@ -27,7 +27,7 @@ public class WineGlass : MonoBehaviour, IInteractable
     {
         if (PickUpItem.FindObjectOfType<PickUpItem>().currentPickedUpItemName == "DaggerPivot")
         {
-            textAppear.SetText("Press E to cut yourself");
+            TextAppear.SetText("Press E to cut yourself");
             canCut = true;
         }
         else Debug.Log("No dagger");
@@ -35,7 +35,7 @@ public class WineGlass : MonoBehaviour, IInteractable
 
     public void OnInteractExit()
     {
-        textAppear.RemoveText();
+        TextAppear.RemoveText();
     }
 
     IEnumerator FillCup()
