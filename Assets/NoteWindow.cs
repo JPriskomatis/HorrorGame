@@ -18,6 +18,7 @@ public class NoteWindow : MonoBehaviour, IInteractable
         {
             textAppear.SetText("Notes about how special herbs can put someone in a coma-like state");
             nurseWindow.NurseDisappear();
+            Destroy(this);
         }
     }
 

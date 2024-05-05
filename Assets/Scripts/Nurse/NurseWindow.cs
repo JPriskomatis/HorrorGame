@@ -22,7 +22,7 @@ public class NurseWindow : MonoBehaviour
         }
 
         jumpscareAudio.Play();
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(0.75f);
 
         // Check if the GameObject is still active before destroying it
         if (gameObject != null && gameObject.activeSelf)
