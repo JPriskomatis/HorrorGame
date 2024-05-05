@@ -9,6 +9,7 @@ public class DaggerScript : MonoBehaviour, IInteractable
     private TextAppear textAppear;
     private Vector3 initialPos;
     [SerializeField] private GameObject item;
+    private bool picked;
     private void Start()
     {
         pickUp = FindObjectOfType<PickUpItem>();
@@ -17,7 +18,7 @@ public class DaggerScript : MonoBehaviour, IInteractable
     }
     public void Interact()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E) && !picked)
         {
             pickUp.PickUp(this.gameObject);
             Instantiate(item, initialPos, Quaternion.identity);
@@ -27,7 +28,8 @@ public class DaggerScript : MonoBehaviour, IInteractable
 
     public void OnInteractEnter()
     {
-        textAppear.SetText("Pickup the Dagger");
+        if(!picked)
+            textAppear.SetText("Pickup the Dagger");
     }
 
     public void OnInteractExit()
