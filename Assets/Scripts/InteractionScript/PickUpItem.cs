@@ -6,31 +6,27 @@ public class PickUpItem : MonoBehaviour
 {
     [SerializeField] private GameObject placeHolder;
     [SerializeField] private Transform parentObject;
-    private GameObject currentPickedUpItem;
-
+    private List<GameObject> pickedUpItems = new List<GameObject>(); // List to hold picked-up items
     public string currentPickedUpItemName;
 
     public void PickUp(GameObject item)
     {
-
         Debug.Log("Picking up Item");
-        // Check if there's already a picked-up item
-        if (currentPickedUpItem != null)
-        {
-            // Destroy the current picked-up item
-            Destroy(currentPickedUpItem);
-            Debug.Log("Destroy");
-        }
+
+        // Determine which placeholder to use
+        GameObject selectedPlaceholder = placeHolder;
 
         // Instantiate and set the new picked-up item
-        currentPickedUpItem = Instantiate(item, placeHolder.transform.position, placeHolder.transform.rotation);
-        currentPickedUpItem.transform.parent = parentObject;
+        GameObject newItem = Instantiate(item, selectedPlaceholder.transform.position, selectedPlaceholder.transform.rotation);
+        newItem.transform.parent = parentObject;
 
         currentPickedUpItemName = item.name;
         // Remove all scripts from the picked-up item
-        RemoveAllScripts(currentPickedUpItem);
-    }
+        RemoveAllScripts(newItem);
 
+        // Add the picked-up item to the list
+        pickedUpItems.Add(newItem);
+    }
 
     //We remove all scripts from the picked-up item;
     private void RemoveAllScripts(GameObject gameObject)
