@@ -30,7 +30,7 @@ public class DaggerScript : MonoBehaviour, IInteractable
             // Use pickedUpTransform's transform to set position and rotation
 
             
-            pickUp.PickUp(this.gameObject, true);
+            pickUp.PickUp(this.gameObject);
             //Instantiate(item, initialPos, Quaternion.identity);
             Destroy(this.gameObject);
         }
