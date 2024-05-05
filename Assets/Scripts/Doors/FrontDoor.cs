@@ -2,13 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(TextAppear))]
 public class FrontDoor : MonoBehaviour, IInteractable
 {
     [SerializeField] private Animator anim;
-    TextAppear textAppear;
 
-
+    private void Start()
+    {
+        TextAppear.Initialize();
+    }
     public void Interact()
     {
         if (Input.GetKeyDown(KeyCode.E))
@@ -19,12 +20,12 @@ public class FrontDoor : MonoBehaviour, IInteractable
 
     public void OnInteractEnter()
     {
-        textAppear.SetText("Press E to Open");
+        TextAppear.SetText("Press E to Open");
     }
 
     public void OnInteractExit()
     {
-        textAppear.RemoveText();
+        TextAppear.RemoveText();
     }
 
     public void CloseDoor()

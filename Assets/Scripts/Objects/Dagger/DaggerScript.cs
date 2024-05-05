@@ -6,7 +6,6 @@ public class DaggerScript : MonoBehaviour, IInteractable
 {
 
     private PickUpItem pickUp;
-    private TextAppear textAppear;
     private Vector3 initialPos;
     [SerializeField] private GameObject item;
     private bool picked;
@@ -15,7 +14,7 @@ public class DaggerScript : MonoBehaviour, IInteractable
     private void Start()
     {
         pickUp = FindObjectOfType<PickUpItem>();
-        textAppear = FindObjectOfType<TextAppear>();
+        TextAppear.Initialize();
         initialPos = gameObject.transform.position;
 
        
@@ -39,11 +38,11 @@ public class DaggerScript : MonoBehaviour, IInteractable
     public void OnInteractEnter()
     {
         if (!picked)
-            textAppear.SetText("Pickup the Dagger");
+            TextAppear.SetText("Pickup the Dagger");
     }
 
     public void OnInteractExit()
     {
-        textAppear.RemoveText();
+        TextAppear.RemoveText();
     }
 }

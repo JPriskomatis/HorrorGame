@@ -15,7 +15,6 @@ public class BookObject : MonoBehaviour, IInteractable
 
     [SerializeField] private string textToDisplay;
 
-    private TextAppear textAppear;
 
     private Quest quest;
 
@@ -23,7 +22,7 @@ public class BookObject : MonoBehaviour, IInteractable
     {
         highlight = GetComponent<HighlightEffect>();
         bookManager = FindObjectOfType<BookManager>();
-        textAppear = GetComponent<TextAppear>();
+        TextAppear.Initialize();
         isOpen = false;
         quest = FindObjectOfType<Quest>();
     }
@@ -48,7 +47,7 @@ public class BookObject : MonoBehaviour, IInteractable
 
     public void Interact()
     {
-        textAppear.SetText(textToDisplay);
+        TextAppear.SetText(textToDisplay);
 
         if (Input.GetKeyDown(KeyCode.E))
         {

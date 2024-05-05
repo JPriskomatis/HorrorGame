@@ -6,33 +6,33 @@ using UnityEngine.Video;
 public class TalkingPaiting : MonoBehaviour, IInteractable
 {
     [SerializeField] private VideoPlayer video;
-    private TextAppear textAppear;
     [SerializeField] private string textToDisplay;
 
     private bool canInteract = false;
 
+    private void Start()
+    {
+        TextAppear.Initialize();
+    }
     public void Interact()
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
             video.Play();
-            textAppear.RemoveText();
+            TextAppear.RemoveText();
         }
     }
 
     public void OnInteractEnter()
     {
-        textAppear.SetText(textToDisplay);
+        TextAppear.SetText(textToDisplay);
     }
 
     public void OnInteractExit()
     {
-        textAppear.RemoveText();
+        TextAppear.RemoveText();
     }
 
-    private void Start()
-    {
-        textAppear = FindObjectOfType<TextAppear>();
-    }
+
 
 }

@@ -3,37 +3,37 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 
-[RequireComponent(typeof(TextAppear))]
+
 public class BloodAppearPhotos : MonoBehaviour, IInteractable
 {
     [SerializeField] private GameObject blood1, blood2, blood3;
-    private TextAppear textAppear;
+    
     [SerializeField] private AudioSource bloodspalsh;
     [SerializeField] private AudioSource tenseAudio;
     
 
     private void Start()
     {
-        textAppear = GetComponent<TextAppear>();
+        TextAppear.Initialize();
     }
 
     public void Interact()
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            textAppear.SetText("Appears to be a family photo...");
+            TextAppear.SetText("Appears to be a family photo...");
             StartCoroutine(InitiateBlood());
         }
     }
 
     public void OnInteractEnter()
     {
-        textAppear.SetText("Inspect Photos");
+        TextAppear.SetText("Inspect Photos");
     }
 
     public void OnInteractExit()
     {
-        textAppear.RemoveText();
+        TextAppear.RemoveText();
     }
 
     private IEnumerator InitiateBlood()

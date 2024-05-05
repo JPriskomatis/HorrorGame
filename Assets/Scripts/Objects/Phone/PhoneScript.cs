@@ -7,7 +7,6 @@ public class PhoneScript : MonoBehaviour, IInteractable
     [SerializeField] private AudioSource currentCall;
     [SerializeField] private AudioSource pickUpCall;
 
-    private TextAppear textAppear;
 
 
 
@@ -15,7 +14,7 @@ public class PhoneScript : MonoBehaviour, IInteractable
     private void Start()
     {
         quest = FindObjectOfType<Quest>();
-        textAppear = FindObjectOfType<TextAppear>();
+        TextAppear.Initialize();
         audioSource.Play();
 
     }
@@ -48,11 +47,11 @@ public class PhoneScript : MonoBehaviour, IInteractable
 
     public void OnInteractEnter()
     {
-        textAppear.SetText("Pick up the phone");
+        TextAppear.SetText("Pick up the phone");
     }
 
     public void OnInteractExit()
     {
-        textAppear.RemoveText();
+        TextAppear.RemoveText();
     }
 }
