@@ -36,7 +36,7 @@ public class Candle : MonoBehaviour, IInteractable
         if (Input.GetKeyDown(KeyCode.E))
         {
             //highlight.ToggleEmission();
-            pickUpItem.PickUp(this.gameObject);
+            pickUpItem.PickUp(this.gameObject, false);
 
             textAppear.RemoveText();
             Destroy(gameObject);
