@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BookOpenDoor : MonoBehaviour, IInteractable
 {
-    [SerializeField] private Animator anim;
+    [SerializeField] private Animator anim, bookAnim;
     [SerializeField] private AudioSource doorCreakingAudio;
     private void Start()
     {
@@ -14,6 +14,7 @@ public class BookOpenDoor : MonoBehaviour, IInteractable
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
+            bookAnim.SetTrigger("push");
             TextAppear.SetText("Something clicked");
             anim.SetTrigger("open");
             doorCreakingAudio.Play();
