@@ -47,6 +47,8 @@ public class BloodAppearPhotos : MonoBehaviour, IInteractable
         blood1.SetActive(true);
         blood2.SetActive(true);
         blood3.SetActive(true);
+        Component targetScript = this.GetComponent<BloodAppearPhotos>();
+        Destroy(targetScript);
 
     }
 }
