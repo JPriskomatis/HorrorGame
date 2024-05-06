@@ -27,5 +27,7 @@ public class InitiateZombie : MonoBehaviour
             yield return null;
         }
         anim.SetTrigger("dead");
+        breathing.Stop();
+        screach.Stop();
     }
 }
