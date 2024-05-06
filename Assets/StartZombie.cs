@@ -11,6 +11,8 @@ public class StartZombie : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             initiazeZombie.StartBreath();
+            Component scriptToDestroy = this.GetComponent<StartZombie>();
+            Destroy(scriptToDestroy);
         }
     }
 }

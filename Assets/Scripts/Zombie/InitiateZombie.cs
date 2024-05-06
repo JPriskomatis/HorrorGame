@@ -20,7 +20,7 @@ public class InitiateZombie : MonoBehaviour
         anim.SetTrigger("crawl");
 
         float elapsedTime = 0f;
-        while (elapsedTime < 5f) // Move for 3 seconds
+        while (elapsedTime < 7f) // Move for 3 seconds
         {
             transform.Translate(direction * speed * Time.deltaTime);
             elapsedTime += Time.deltaTime;
