@@ -14,6 +14,7 @@ public class BookOpenDoor : MonoBehaviour, IInteractable
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
+            TextAppear.RemoveText();
             bookAnim.SetTrigger("push");
             TextAppear.SetText("Something clicked");
             anim.SetTrigger("open");
