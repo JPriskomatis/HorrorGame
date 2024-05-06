@@ -9,6 +9,7 @@ public class NotesScript : MonoBehaviour, IInteractable
     [SerializeField] private string[] lines;
     private float speed = 0.1f;
     private int index;
+    [SerializeField] private AudioSource bgAudio;
 
     private void Start()
     {
@@ -33,6 +34,7 @@ public class NotesScript : MonoBehaviour, IInteractable
     }
     void StartDialogue()
     {
+        bgAudio.Play();
         textComponent.gameObject.SetActive(true);
         textComponent.text = string.Empty;
         index = 0;
@@ -51,14 +53,18 @@ public class NotesScript : MonoBehaviour, IInteractable
 
     void NextLine()
     {
-        if(index < lines.Length - 1)
+        if (index < lines.Length - 1)
         {
             index++;
             textComponent.text = string.Empty;
             StartCoroutine(TypeLine());
         }
         else
+        {
+            bgAudio.loop = false;
             textComponent.gameObject.SetActive(false);
+        }
+            
     }
 
     public void Interact()
