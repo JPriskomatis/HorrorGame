@@ -26,5 +26,6 @@ public class InitiateZombie : MonoBehaviour
             elapsedTime += Time.deltaTime;
             yield return null;
         }
+        anim.SetTrigger("dead");
     }
 }
