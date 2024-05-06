@@ -31,9 +31,10 @@ public class Candle : MonoBehaviour, IInteractable
 
     public void Interact()
     {
-        TextAppear.SetText(textToDisplay);
+        
         if (Input.GetKeyDown(KeyCode.E))
         {
+            TextAppear.RemoveText();
             //highlight.ToggleEmission();
             pickUpItem.PickUp(this.gameObject);
 
@@ -48,6 +49,7 @@ public class Candle : MonoBehaviour, IInteractable
     }
     public void OnInteractEnter()
     {
+        TextAppear.SetText(textToDisplay);
         ToggleEmmision();
         emissionToggled = !emissionToggled;
     }

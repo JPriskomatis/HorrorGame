@@ -42,7 +42,7 @@ public class NurseWindow : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit, Mathf.Infinity, layerMask))
         {
-            Debug.Log("Hit: " + hit.collider.gameObject.name);
+            //Debug.Log("Hit: " + hit.collider.gameObject.name);
             // Check if the hit GameObject is this GameObject
             return hit.collider.gameObject == gameObject;
         }
