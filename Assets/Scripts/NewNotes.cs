@@ -11,6 +11,7 @@ public class NewNotes : MonoBehaviour
 
     private void Update()
     {
+        //If we press the space button we go the next line;
         if (Input.GetKeyDown(KeyCode.Space)){
             NextLine();
         }
@@ -53,6 +54,8 @@ public class NewNotes : MonoBehaviour
 
     private void NextLine()
     {
+        //If the arraylist is not empty (means index==text.length)
+        //then proceed to the next line;
         if(index < text.Length - 1)
         {
             index++;
@@ -65,8 +68,11 @@ public class NewNotes : MonoBehaviour
     }
     private void EndOfDialogue()
     {
+        //We deactivate our object
         textComponent.text = string.Empty;
         textComponent.gameObject.SetActive(false);
+
+        //we reset our index so that next iteration we start from 0;
         index = 0;
     }
 }
