@@ -13,9 +13,10 @@ public class DrinkBeer : MonoBehaviour, IInteractable
         {
             TextAppear.RemoveText();
             anim.SetTrigger("drink");
-            drinkAudio.Play();
+            StartCoroutine(DrinkBeerAnim());
             
-            StartCoroutine(Burp());
+            
+            
             
             
         }
@@ -31,12 +32,19 @@ public class DrinkBeer : MonoBehaviour, IInteractable
         TextAppear.RemoveText();
     }
 
+    private IEnumerator DrinkBeerAnim()
+    {
+        yield return new WaitForSeconds(1.5f);
+        drinkAudio.Play();
+        StartCoroutine(Burp());
+    }
     private IEnumerator Burp()
     {
-        
         yield return new WaitForSeconds(2f);
-        Debug.Log("Start animation");
         anim.SetTrigger("leave");
+        yield return new WaitForSeconds(1f);
+   
+        
         burp.Play();
         StartCoroutine(DeleteScript());
     }

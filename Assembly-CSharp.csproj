@@ -81,6 +81,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
     <Compile Include="Assets\Scripts\TotalHorror\TotalHorrorScript.cs" />
     <Compile Include="Assets\Scripts\InteractionScript\Candle.cs" />
+    <Compile Include="Assets\Scripts\NotesScript.cs" />
     <Compile Include="Assets\Scripts\InteractionScript\ObjectRotation.cs" />
     <Compile Include="Assets\Scripts\Objects\Padlock.cs" />
     <Compile Include="Assets\Scripts\Objects\MoveChair.cs" />
@@ -94,6 +95,7 @@
     <Compile Include="Assets\FirstGearGames\Utilities\Ints.cs" />
     <Compile Include="Assets\Scripts\Intro\IntroText.cs" />
     <Compile Include="Assets\Scripts\PlayerScript\PlayerThoughts.cs" />
+    <Compile Include="Assets\Scripts\Zombie\StartZombie.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
     <Compile Include="Assets\FirstGearGames\SmoothCameraShaker\Scripts\Shakables\ShakableTransform2D.cs" />
@@ -140,6 +142,7 @@
     <Compile Include="Assets\FirstGearGames\Utilities\Arrays.cs" />
     <Compile Include="Assets\Scripts\Objects\Lightbulbs\FlickeringLight.cs" />
     <Compile Include="Assets\Scripts\UI\TextAppear.cs" />
+    <Compile Include="Assets\DrinkBeer.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
     <Compile Include="Assets\FirstGearGames\Utilities\Transforms.cs" />
     <Compile Include="Assets\FirstGearGames\SmoothCameraShaker\Scripts\Shakables\ShakableBase.cs" />
@@ -165,6 +168,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
+    <Compile Include="Assets\Scripts\Zombie\InitiateZombie.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\Scripts\AudioScripts\FadeAudio.cs" />
     <Compile Include="Assets\FirstGearGames\Utilities\Structures\RangeInt.cs" />
@@ -174,8 +178,6 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\Scripts\PlayerScript\Health.cs" />
     <Compile Include="Assets\Scripts\InteractionScript\ZoomInEffect.cs" />
-    <Compile Include="Assets\Scripts\Zombie\InitiateZombie.cs" />
-    <Compile Include="Assets\StartZombie.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\AssetPacks\chest\license.txt" />
