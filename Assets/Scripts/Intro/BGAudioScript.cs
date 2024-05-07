@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class BGAudioScript : MonoBehaviour
@@ -7,11 +6,11 @@ public class BGAudioScript : MonoBehaviour
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private float fadeDuration = 10.0f;
     private bool isFadingIn = false;
-
+    private bool isFadingOut = false;
 
     private void Start()
     {
-        if(audioSource == null)
+        if (audioSource == null)
         {
             return;
         }
@@ -28,12 +27,29 @@ public class BGAudioScript : MonoBehaviour
             float progress = Mathf.Clamp01(Time.time / fadeDuration);
 
             // Increase the volume over time
-            audioSource.volume = Mathf.Lerp(0f, 0.6f, progress);
+            audioSource.volume = Mathf.Lerp(0f, 0.8f, progress);
 
             // Check if fade is complete
             if (progress >= 1.0f)
             {
                 isFadingIn = false;
+            }
+        }
+
+        // Check if fading out and update the volume accordingly
+        if (isFadingOut)
+        {
+            // Calculate the progress of the fade
+            float progress = Mathf.Clamp01(Time.time / fadeDuration);
+
+            // Decrease the volume over time
+            audioSource.volume = Mathf.Lerp(0.8f, 0f, progress);
+
+            // Check if fade is complete
+            if (progress >= 1.0f)
+            {
+                isFadingOut = false;
+                audioSource.Stop(); // Stop the audio after fading out
             }
         }
     }
@@ -44,4 +60,8 @@ public class BGAudioScript : MonoBehaviour
         isFadingIn = true;
     }
 
+    public void FadeOut()
+    {
+        isFadingOut = true;
+    }
 }

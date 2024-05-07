@@ -1,7 +1,7 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class IntroText : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI textComponent;
@@ -11,6 +11,8 @@ public class IntroText : MonoBehaviour
     [SerializeField] private float letterDisplaySpeed = 0.075f;
     [SerializeField] private float continueTextOpacityDuringDisplay = 0.5f;
     private Color originalContinueTextColor;
+
+    
 
     private void Start()
     {
@@ -31,7 +33,9 @@ public class IntroText : MonoBehaviour
             yield return WaitForInput(KeyCode.Space); // Wait for the "space" key press;
             textComponent.text = "";
         }
+        continueText.gameObject.SetActive(false);
         audioSource.Stop(); // Stop the audio after displaying all texts;
+        SceneManager.LoadScene("GameScene");
     }
 
     private IEnumerator DisplayText(string text)
@@ -42,6 +46,7 @@ public class IntroText : MonoBehaviour
             textComponent.text += text[j];
             yield return new WaitForSeconds(letterDisplaySpeed);
         }
+        
         audioSource.Stop(); // Stop the audio after displaying the last letter of the text;
     }
 
