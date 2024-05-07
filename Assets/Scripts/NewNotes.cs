@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class NewNotes : MonoBehaviour, IInteractable
+public class NewNotes : MonoBehaviour
 {
     [SerializeField] private string[] text;
     [SerializeField] private TextMeshProUGUI textComponent;
@@ -13,6 +13,16 @@ public class NewNotes : MonoBehaviour, IInteractable
     {
         if (Input.GetKeyDown(KeyCode.Space)){
             NextLine();
+        }
+    }
+
+    public void TransferStrings(string[] texts)
+    {
+        System.Array.Resize(ref text, texts.Length);
+        for (int i = 0; i < texts.Length; i++)
+        {
+            text[i] = texts[i];
+            EnableDialogue();
         }
     }
     private void EnableDialogue()
@@ -37,7 +47,7 @@ public class NewNotes : MonoBehaviour, IInteractable
         if (index < text.Length)
         {
             //Assign text to it;
-            textComponent.text = text[index];
+            textComponent.text = this.text[index];
         }
     }
 
@@ -58,24 +68,5 @@ public class NewNotes : MonoBehaviour, IInteractable
         textComponent.text = string.Empty;
         textComponent.gameObject.SetActive(false);
         index = 0;
-    }
-
-    public void Interact()
-    {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            TextAppear.RemoveText();
-            EnableDialogue();
-        }
-    }
-
-    public void OnInteractEnter()
-    {
-        TextAppear.SetText("Read");
-    }
-
-    public void OnInteractExit()
-    {
-        TextAppear.RemoveText();
     }
 }

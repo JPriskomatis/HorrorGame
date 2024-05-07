@@ -26799,7 +26799,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1692549985645081242, guid: 7f14757cc3822af478dfae9e9188cda5, type: 3}
   m_PrefabInstance: {fileID: 1692549986303547431}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1976567232}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
@@ -62254,13 +62254,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1604877628}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a30329fca8e05d4e971a1638d45f353, type: 3}
+  m_Script: {fileID: 11500000, guid: 720806c375c84e94b94f90a7791c7a69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text:
-  - Test example
-  - Please work
-  textComponent: {fileID: 683715261}
+  textToDisplay:
+  - test please work
+  - I beg you
+  - Where is my pizzaa
+  newNotes: {fileID: 1976567235}
 --- !u!1001 &1604998219
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -63479,13 +63480,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1361904927}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a30329fca8e05d4e971a1638d45f353, type: 3}
+  m_Script: {fileID: 11500000, guid: 720806c375c84e94b94f90a7791c7a69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text:
-  - I want it that way
-  - Tell me whyyy
-  textComponent: {fileID: 683715261}
+  textToDisplay:
+  - If this work
+  - This is big money
+  - Lets go young blud
+  - Sushi
+  newNotes: {fileID: 1976567235}
 --- !u!1001 &1665146480
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -77213,6 +77216,25 @@ Transform:
   m_Father: {fileID: 441556907}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1976567232 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1692549985645081244, guid: 7f14757cc3822af478dfae9e9188cda5, type: 3}
+  m_PrefabInstance: {fileID: 1692549986303547431}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1976567235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1976567232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a30329fca8e05d4e971a1638d45f353, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: []
+  textComponent: {fileID: 683715261}
 --- !u!1 &1979821134
 GameObject:
   m_ObjectHideFlags: 0
@@ -83924,7 +83946,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: ThoughtsText
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1692549985645081240, guid: 7f14757cc3822af478dfae9e9188cda5, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7f14757cc3822af478dfae9e9188cda5, type: 3}
 --- !u!1 &1692856720265886746
 GameObject:
