@@ -20,6 +20,7 @@ public class TextContent : MonoBehaviour, IInteractable
         if (Input.GetKeyDown(KeyCode.E))
         {
             newNotes.TransferStrings(textToDisplay);
+            TextAppear.RemoveText();
         }
     }
 
