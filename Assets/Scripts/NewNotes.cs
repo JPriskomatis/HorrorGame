@@ -7,6 +7,7 @@ public class NewNotes : MonoBehaviour
 {
     [SerializeField] private string[] text;
     [SerializeField] private TextMeshProUGUI textComponent;
+    [SerializeField] private TextMeshProUGUI spaceComponent;
     private int index;
 
     private void Update()
@@ -17,6 +18,7 @@ public class NewNotes : MonoBehaviour
         }
     }
 
+    //Transfer the strings from the gameobject into the textMeshProGUI text component;
     public void TransferStrings(string[] texts)
     {
         System.Array.Resize(ref text, texts.Length);
@@ -26,10 +28,14 @@ public class NewNotes : MonoBehaviour
             EnableDialogue();
         }
     }
+
     private void EnableDialogue()
     {
         //Activate gameobject;
         textComponent.gameObject.SetActive(true);
+
+        //Activate spaceText;
+        spaceComponent.gameObject.SetActive(true);
 
         //Make it empty;
         textComponent.text = string.Empty;
@@ -71,6 +77,7 @@ public class NewNotes : MonoBehaviour
         //We deactivate our object
         textComponent.text = string.Empty;
         textComponent.gameObject.SetActive(false);
+        spaceComponent.gameObject.SetActive(false);
 
         //we reset our index so that next iteration we start from 0;
         index = 0;
