@@ -327,7 +327,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 105831336}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b3a86fe8d546f1e479857624a171e761, type: 3}
   m_Name: 
@@ -923,22 +923,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1448071528}
   textList:
-  - How can one's house be seen?
-  - Some can witness a home as creative, others as dull and others as indifferent.
-  - ' But what about a mansion which is up to this date haunted from a legend?'
-  - 'A legend that states the following:'
-  - "Doctor Stephens, a charming, intelligent and famous doctor in  the 70\u2019s"
-  - would start his journey on creating the medicine that until today is unknown
-    on what it could do to a human being.
-  - Some said that his family abandoned him after finding out the plans that he had
-    scheduled with this medicine.
-  - After years, he is still inside that mansion rotting to his loneliness.
-  - Thus, the only people that may or may not discover the truth about this haunted
-    legend are
-  - 'are Federick, Derrick, Stephen and Maive.  '
+  - What... what happened to me?
+  - Everything's... foggy. My mind feels like a maze, twisting and turning, leading
+    me nowhere.
+  - ' can''t remember... anything. Who am I? How did I end up here?'
+  - I only remem..remember..remember the complete darkness that drawned me..
+  - I..I gotta get help...someone..
+  - please..
   audioSource: {fileID: 1062450941}
   continueText: {fileID: 1891273640}
-  letterDisplaySpeed: 0.075
+  letterDisplaySpeed: 0.065
   continueTextOpacityDuringDisplay: 0.3
 --- !u!114 &1448071528
 MonoBehaviour:
