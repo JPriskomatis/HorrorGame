@@ -78847,6 +78847,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2014377217}
   - component: {fileID: 2014377218}
+  - component: {fileID: 2014377219}
   m_Layer: 0
   m_Name: ThoughtsManager
   m_TagString: Untagged
@@ -78886,6 +78887,10 @@ MonoBehaviour:
   - Seems locked, I gotta find a key.
   - There must be a way around this.
   - Won't budge, must find another way.
+  doorLockedAudios:
+  - {fileID: 8300000, guid: b75a7fd3859de3144bbbd64e39dd315a, type: 3}
+  - {fileID: 8300000, guid: 9d191a78b8805bf4dbb441f8169d40ca, type: 3}
+  - {fileID: 8300000, guid: e262d117b488fbe48848b74c20326844, type: 3}
   calmTexts:
   - What is this place?
   - I wonder what happened inside here.
@@ -78899,6 +78904,102 @@ MonoBehaviour:
   - WHAT THE FUCK IS GOING ON
   - HELP ME GOD PLEASE HELP ME
   thoughtsText: {fileID: 683715261}
+--- !u!82 &2014377219
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2014377216}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &2019724940
 GameObject:
   m_ObjectHideFlags: 0
@@ -84020,7 +84121,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1692549985645081242, guid: 7f14757cc3822af478dfae9e9188cda5, type: 3}
       propertyPath: m_text
-      value: sdfasdfasdf
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1692549985645081243, guid: 7f14757cc3822af478dfae9e9188cda5, type: 3}
       propertyPath: m_Pivot.x

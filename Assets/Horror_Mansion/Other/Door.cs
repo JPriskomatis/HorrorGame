@@ -54,8 +54,11 @@ public class Door : MonoBehaviour, IInteractable
 
     void HandleLockedDoor()
     {
-        // Door is locked, provide feedback or take appropriate action
+        // Door is locked, provide feedback or take appropriate action;
         Debug.Log("The door is locked.");
+
+        //Player talking that the door is locked;
+        PlayerThoughts.FindObjectOfType<PlayerThoughts>().DoorLockedText();
 
         lockedAudio.Play();
     }
