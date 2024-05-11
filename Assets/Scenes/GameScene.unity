@@ -63749,8 +63749,16 @@ MonoBehaviour:
   - '"After that I extracted the crucial body part of the surviving worms and placed
     them on other unconscious prisoners of mine"'
   - '"Imagine if I can transfer the healing properties of one individual to another..."'
-  - '"I''m getting closer and closer sweatheart, I know it.."'
-  speechToDisplay: []
+  - '"I''m getting closer and closer sweetheart... I know it.."'
+  speechToDisplay:
+  - {fileID: 8300000, guid: 39999c50ce52f704398655d489be5b76, type: 3}
+  - {fileID: 8300000, guid: 26cb75b034e42b74c9d90dd5e3110fae, type: 3}
+  - {fileID: 8300000, guid: dbe2568ed5bd44c47ab06ab18ac3788b, type: 3}
+  - {fileID: 8300000, guid: 28ad2a27758fbd54ba7bf80cca633450, type: 3}
+  - {fileID: 8300000, guid: 880b3ae91e6e8c8428387c95502bff6f, type: 3}
+  - {fileID: 8300000, guid: 861f7305b1b601145af48229c942c25d, type: 3}
+  - {fileID: 8300000, guid: 91280e54459e67d4aa3db241ef6e9540, type: 3}
+  - {fileID: 8300000, guid: 6a0df8fccdaba5e44b18bb5aae8ffac8, type: 3}
   newNotes: {fileID: 1976567235}
 --- !u!82 &1663038096
 AudioSource:
