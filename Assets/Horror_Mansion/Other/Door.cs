@@ -4,14 +4,13 @@ using UnityEngine.UI;
 public class Door : MonoBehaviour, IInteractable
 {
     bool open;
-    bool ePressed = false;
-    bool playerNear = false;
+
     public float smooth = 2.0f;
     public float DoorOpenAngle = 90.0f;
     public float rotationTolerance = 1.0f; // Tolerance for stopping rotation
     private Quaternion defaultRot;
     private Quaternion openRot;
-    public Text txt;
+
 
     [SerializeField] private AudioSource closeAudio;
     [SerializeField] private AudioSource openAudio;
@@ -50,14 +49,14 @@ public class Door : MonoBehaviour, IInteractable
         }
         open = !open;
 
-        ePressed = false;
+
     }
 
     void HandleLockedDoor()
     {
         // Door is locked, provide feedback or take appropriate action
         Debug.Log("The door is locked.");
-        ePressed = false;
+
         lockedAudio.Play();
     }
 
@@ -92,8 +91,11 @@ public class Door : MonoBehaviour, IInteractable
 
     public void CloseDoor()
     {
-        closeAudio.Play();
-        open = false;
-        locked = true;
+        {
+            closeAudio.Play();
+            open = false;
+            locked = true;
+            transform.rotation = defaultRot; // Reset rotation to default
+        }
     }
 }
