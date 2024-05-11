@@ -1,10 +1,11 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-public class Door : MonoBehaviour
+public class Door : MonoBehaviour, IInteractable
 {
-    bool trig, open;
+    bool open;
     bool ePressed = false;
+    bool playerNear = false;
     public float smooth = 2.0f;
     public float DoorOpenAngle = 90.0f;
     public float rotationTolerance = 1.0f; // Tolerance for stopping rotation
@@ -22,28 +23,7 @@ public class Door : MonoBehaviour
     {
         defaultRot = transform.rotation;
         openRot = Quaternion.Euler(defaultRot.eulerAngles + Vector3.up * DoorOpenAngle);
-    }
-
-    void Update()
-    {
-        if (ePressed && trig)
-        {
-            TryToggleDoor();
-        }
-
-        if (open && Quaternion.Angle(transform.rotation, openRot) > rotationTolerance)
-        {
-            transform.rotation = Quaternion.Slerp(transform.rotation, openRot, Time.deltaTime * smooth);
-        }
-        else if (!open && Quaternion.Angle(transform.rotation, defaultRot) > rotationTolerance)
-        {
-            transform.rotation = Quaternion.Slerp(transform.rotation, defaultRot, Time.deltaTime * smooth);
-        }
-
-        if (trig)
-        {
-            UpdateUIText();
-        }
+        TextAppear.Initialize();
     }
 
     void TryToggleDoor()
@@ -69,7 +49,7 @@ public class Door : MonoBehaviour
             closeAudio.Play();
         }
         open = !open;
-        
+
         ePressed = false;
     }
 
@@ -81,47 +61,39 @@ public class Door : MonoBehaviour
         lockedAudio.Play();
     }
 
-    void UpdateUIText()
+    public void Interact()
     {
-        if (open)
+        if (Input.GetKeyDown(KeyCode.E))
         {
-            txt.text = "Close E";
+            TryToggleDoor();
         }
-        else
+
+        if (open && Quaternion.Angle(transform.rotation, openRot) > rotationTolerance)
         {
-            txt.text = "Open E";
+            transform.rotation = Quaternion.Slerp(transform.rotation, openRot, Time.deltaTime * smooth);
+        }
+        else if (!open && Quaternion.Angle(transform.rotation, defaultRot) > rotationTolerance)
+        {
+            transform.rotation = Quaternion.Slerp(transform.rotation, defaultRot, Time.deltaTime * smooth);
         }
     }
+
+    public void OnInteractEnter()
+    {
+        TextAppear.SetText("Open");
+
+    }
+
+    public void OnInteractExit()
+    {
+        TextAppear.RemoveText();
+
+    }
+
     public void CloseDoor()
     {
         closeAudio.Play();
         open = false;
         locked = true;
-    }
-
-    private void OnTriggerEnter(Collider coll)
-    {
-        if (coll.CompareTag("Player"))
-        {
-            UpdateUIText();
-            trig = true;
-        }
-    }
-
-    private void OnTriggerExit(Collider coll)
-    {
-        if (coll.CompareTag("Player"))
-        {
-            txt.text = " ";
-            trig = false;
-        }
-    }
-
-    private void OnTriggerStay(Collider coll)
-    {
-        if (coll.CompareTag("Player") && Input.GetKeyDown(KeyCode.E))
-        {
-            ePressed = true;
-        }
     }
 }

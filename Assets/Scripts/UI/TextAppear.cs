@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro;
 
+
 public static class TextAppear
 {
     private static TextMeshProUGUI text;
@@ -8,7 +9,7 @@ public static class TextAppear
 
     public static void Initialize()
     {
-        playerThoughts = Object.FindObjectOfType<PlayerThoughts>();
+        //playerThoughts = Object.FindObjectOfType<PlayerThoughts>();
 
         // Find the GameObject named "InteractionText" and get its TextMeshPro component
         GameObject interactionTextObject = GameObject.Find("InteractionText");
@@ -30,8 +31,8 @@ public static class TextAppear
     {
         if (text != null)
         {
-            text.text = textToPut;
             text.gameObject.SetActive(true);
+            text.text = textToPut;
         }
         else
         {
