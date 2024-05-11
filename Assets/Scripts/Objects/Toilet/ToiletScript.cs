@@ -7,6 +7,7 @@ public class ToiletScript : MonoBehaviour, IInteractable
     [SerializeField] private Animator anim;
     private bool isOpen;
     [SerializeField] private AudioSource headAudio;
+    [SerializeField] private GameObject cautionTapes;
 
 
     private void Start()
@@ -23,6 +24,8 @@ public class ToiletScript : MonoBehaviour, IInteractable
             this.GetComponent<SphereCollider>().enabled = false;
             // Use FadeInAndPlay method to fade in audio and play it
             headAudio.Play();
+
+            Destroy(cautionTapes);
         }
         
     }

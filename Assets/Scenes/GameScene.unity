@@ -23738,7 +23738,7 @@ BoxCollider:
   m_GameObject: {fileID: 568473253}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 2.139027, y: 1.3776257, z: 0.25740623}
   m_Center: {x: 0.56950676, y: 0.13241264, z: -0.14321041}
@@ -23980,7 +23980,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 920540589027151962, guid: 8e593afa8c38ae84fa6f2c5030d04ea5, type: 3}
       propertyPath: m_Size.x
-      value: 0
+      value: 0.65136814
       objectReference: {fileID: 0}
     - target: {fileID: 920540589027151962, guid: 8e593afa8c38ae84fa6f2c5030d04ea5, type: 3}
       propertyPath: m_Size.z
@@ -23988,7 +23988,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 920540589027151962, guid: 8e593afa8c38ae84fa6f2c5030d04ea5, type: 3}
       propertyPath: m_Center.x
-      value: -0.21778297
+      value: 0.016922474
       objectReference: {fileID: 0}
     - target: {fileID: 920540589027151962, guid: 8e593afa8c38ae84fa6f2c5030d04ea5, type: 3}
       propertyPath: m_Center.z
@@ -41902,6 +41902,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 1122167527}
   headAudio: {fileID: 1122167531}
+  cautionTapes: {fileID: 568473253}
 --- !u!4 &1122167523 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ab4e95ece6220a64a9f32996f0253875, type: 3}
