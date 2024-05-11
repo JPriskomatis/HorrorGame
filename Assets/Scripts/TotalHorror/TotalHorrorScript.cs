@@ -8,6 +8,7 @@ public class TotalHorrorScript : MonoBehaviour
     [SerializeField] private AudioSource screech;
     [SerializeField] private AudioSource jumpscare;
     [SerializeField] private HeartbeatAudio heartBeat;
+    [SerializeField] private AudioSource heavyBreathing;
 
     public Transform player;
     public float speed = 5f;
@@ -67,8 +68,8 @@ public class TotalHorrorScript : MonoBehaviour
             screech.Play();
             jumpscare.Play();
             isBreathing = false;
+            
             heartBeat.InitiateHeartbeat();
-
             hasPlayedAudio = true; // Set the flag to true to indicate that audio has been played
         }
     }
