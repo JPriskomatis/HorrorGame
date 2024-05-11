@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
@@ -7,6 +8,7 @@ public class PlayerThoughts : MonoBehaviour
     public bool displayText;
 
     [SerializeField] private string[] doorLockedTexts;
+    [SerializeField] private AudioClip[] doorLockedAudios;
 
     // State Texts
     [SerializeField] private string[] calmTexts;
@@ -15,20 +17,33 @@ public class PlayerThoughts : MonoBehaviour
     [SerializeField] private string[] panicTexts;
 
     [SerializeField] private TextMeshProUGUI thoughtsText;
-    private FadeText fadeText;
 
     private Health stressSystem; // Reference to the Health script
     private float nextUpdateTime; // Time for next text update
     private const float updateInterval = 25f; // Time interval to display the text
     private Coroutine textDisappearCoroutine; // Coroutine reference for text disappearance
-
+    private Dictionary<string, AudioClip> lockedDoorAudioMap = new Dictionary<string, AudioClip>();
+    private AudioSource audioSource;
 
     private void Start()
     {
+
         stressSystem = FindObjectOfType<Health>(); // Get reference to Health script
         nextUpdateTime = Time.time + updateInterval; // Set initial update time
-        fadeText = thoughtsText.GetComponent<FadeText>(); // Get reference to FadeText script
+        audioSource = GetComponent<AudioSource>();
 
+        for (int i = 0; i < doorLockedTexts.Length; i++)
+        {
+            if (i < doorLockedAudios.Length)
+            {
+                lockedDoorAudioMap.Add(doorLockedTexts[i], doorLockedAudios[i]);
+            }
+            else
+            {
+                Debug.LogWarning("Not enough audio clips for all locked door texts.");
+                break;
+            }
+        }
 
 
     }
@@ -39,8 +54,12 @@ public class PlayerThoughts : MonoBehaviour
         thoughtsText.gameObject.SetActive(true);
         thoughtsText.text = doorLockedTexts[textIndex];
 
-        // Start the fade-in coroutine from FadeText script
-        fadeText.FadeInText();
+        if (lockedDoorAudioMap.ContainsKey(doorLockedTexts[textIndex]))
+        {
+            audioSource.clip = lockedDoorAudioMap[doorLockedTexts[textIndex]];
+            audioSource.Play();
+        }
+
 
         // Set playerThinking to true since thoughtsText is active
         displayText = true;
@@ -59,7 +78,6 @@ public class PlayerThoughts : MonoBehaviour
     private IEnumerator TextDisappearCoroutine()
     {
         yield return new WaitForSeconds(2f); // Wait for 2 seconds
-        fadeText.FadeOutText(); // Start the fade-out coroutine from FadeText script
         
         yield return new WaitForSeconds(2f);
         displayText = false;
@@ -116,8 +134,6 @@ public class PlayerThoughts : MonoBehaviour
         thoughtsText.gameObject.SetActive(true);
         thoughtsText.text = selectedTexts[textIndex];
 
-        // Start the fade-in coroutine from FadeText script
-        fadeText.FadeInText();
 
         // Cancel any existing coroutine before starting a new one
         if (textDisappearCoroutine != null)
