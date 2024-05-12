@@ -5,7 +5,17 @@ using UnityEngine;
 public class DoorKnocking : MonoBehaviour
 {
     [SerializeField] private AudioSource knockingAudio;
+    [SerializeField] private Door door;
 
+    private void Update()
+    {
+        if (door.open)
+        {
+            StopKnocking();
+            Component scriptToDel = this.GetComponent<DoorKnocking>();
+            Destroy(scriptToDel);
+        }
+    }
     public void StartKnocking()
     {
         knockingAudio.Play();
@@ -15,17 +25,5 @@ public class DoorKnocking : MonoBehaviour
     {
         knockingAudio?.Stop();
     }
-
-    private void OnTriggerStay(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            Debug.Log("First");
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                Debug.Log("Second");
-                StopKnocking();
-            }
-        }
-    }
+    
 }
