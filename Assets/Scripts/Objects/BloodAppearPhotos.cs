@@ -10,6 +10,7 @@ public class BloodAppearPhotos : MonoBehaviour, IInteractable
     
     [SerializeField] private AudioSource bloodspalsh;
     [SerializeField] private AudioSource tenseAudio;
+    [SerializeField] private AudioSource speech;
     
 
     private void Start()
@@ -22,6 +23,7 @@ public class BloodAppearPhotos : MonoBehaviour, IInteractable
         if (Input.GetKeyDown(KeyCode.E))
         {
             TextAppear.SetText("Appears to be a family photo...");
+            speech.Play();
             StartCoroutine(InitiateBlood());
         }
     }
