@@ -10,9 +10,22 @@ using UnityEngine;
  * text ot the user.
  */
 
+[RequireComponent(typeof(AudioSource))]
 public class TextContent : MonoBehaviour, IInteractable
 {
     [SerializeField] string[] textToDisplay;
+    [SerializeField] AudioClip[] speechToDisplay;
+    private AudioSource audioSource;
+    [HideInInspector] public Dictionary<string, AudioClip> dictionary = new Dictionary<string, AudioClip>();
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+        for(int i = 0; i < textToDisplay.Length; i++)
+        {
+            dictionary.Add(textToDisplay[i], speechToDisplay[i]);
+        }
+    }
+
     [SerializeField] private NewNotes newNotes;
 
     public void Interact()
@@ -20,6 +33,8 @@ public class TextContent : MonoBehaviour, IInteractable
         if (Input.GetKeyDown(KeyCode.E))
         {
             newNotes.TransferStrings(textToDisplay);
+            newNotes.TransferAudios(speechToDisplay);
+            
             TextAppear.RemoveText();
         }
     }

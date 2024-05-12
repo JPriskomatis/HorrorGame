@@ -20,8 +20,10 @@ public class DoorKnocking : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            Debug.Log("First");
             if (Input.GetKeyDown(KeyCode.E))
             {
+                Debug.Log("Second");
                 StopKnocking();
             }
         }
