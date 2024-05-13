@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class Door : MonoBehaviour, IInteractable
 {
-    bool open;
+    [HideInInspector] public bool open;
 
     public float smooth = 2.0f;
     public float DoorOpenAngle = 90.0f;
