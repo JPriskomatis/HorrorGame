@@ -5,7 +5,7 @@ using UnityEngine;
 public class WineGlass : MonoBehaviour, IInteractable
 {
     [SerializeField] private GameObject wine;
-
+    [SerializeField] private AudioSource gettingCut;
     public bool canCut;
 
     private void Start()
@@ -39,8 +39,10 @@ public class WineGlass : MonoBehaviour, IInteractable
 
     IEnumerator FillCup()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.5f);
+        gettingCut.Play();
         wine.SetActive(true);
+        
 
         StartCoroutine(DestroyScripts());
     }
