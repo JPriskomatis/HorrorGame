@@ -6,13 +6,11 @@ public class WineGlass : MonoBehaviour, IInteractable
 {
     [SerializeField] private GameObject wine;
 
-    private bool canCut;
-    private Quest quest;
-    [SerializeField] private DoorScript doorScript;
+    public bool canCut;
+
     private void Start()
     {
         TextAppear.Initialize();
-        quest = FindObjectOfType<Quest>();
     }
     public void Interact()
     {
@@ -25,12 +23,13 @@ public class WineGlass : MonoBehaviour, IInteractable
 
     public void OnInteractEnter()
     {
-        if (PickUpItem.FindObjectOfType<PickUpItem>().currentPickedUpItemName == "DaggerPivot")
+        if (canCut)
         {
             TextAppear.SetText("Press E to cut yourself");
             canCut = true;
         }
-        else Debug.Log("No dagger");
+        
+        
     }
 
     public void OnInteractExit()
@@ -42,9 +41,7 @@ public class WineGlass : MonoBehaviour, IInteractable
     {
         yield return new WaitForSeconds(1f);
         wine.SetActive(true);
-        quest.CompleteQuest();
-        doorScript.locked = false;
-        Debug.Log("Complete quest");
+
         StartCoroutine(DestroyScripts());
     }
 
