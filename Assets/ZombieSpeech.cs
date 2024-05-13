@@ -12,7 +12,7 @@ public class ZombieSpeech : MonoBehaviour, IInteractable
 
     public void OnInteractEnter()
     {
-        TextAppear.SetText("What...What is that monstrosity?");
+        TextAppear.SetText("What the hell is even that?");
         zombieSpeech.Play();
         StartCoroutine(DeleteScript());
     }
