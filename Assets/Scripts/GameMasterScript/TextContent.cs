@@ -32,20 +32,27 @@ public class TextContent : MonoBehaviour, IInteractable
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            newNotes.TransferStrings(textToDisplay);
-            newNotes.TransferAudios(speechToDisplay);
+            ReadTextContent();
             
-            TextAppear.RemoveText();
         }
     }
 
     public void OnInteractEnter()
     {
+        Debug.Log("helo");
         TextAppear.SetText("Read");
     }
 
     public void OnInteractExit()
     {
+        TextAppear.RemoveText();
+    }
+
+    public void ReadTextContent()
+    {
+        newNotes.TransferStrings(textToDisplay);
+        newNotes.TransferAudios(speechToDisplay);
+
         TextAppear.RemoveText();
     }
 }

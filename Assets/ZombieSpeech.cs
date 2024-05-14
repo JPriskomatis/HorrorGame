@@ -19,7 +19,7 @@ public class ZombieSpeech : MonoBehaviour, IInteractable
 
     public void OnInteractExit()
     {
-        throw new System.NotImplementedException();
+        Debug.Log("Exited");
     }
 
     private IEnumerator DeleteScript()

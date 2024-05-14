@@ -5,14 +5,17 @@ using UnityEngine;
 public class WineGlass : MonoBehaviour, IInteractable
 {
     [SerializeField] private GameObject wine;
+    [SerializeField] private AudioSource gettingCut;
+    [SerializeField] private CrossScript cross, cross2, cross3;
+    public bool canCut;
 
-    private bool canCut;
-    private Quest quest;
-    [SerializeField] private DoorScript doorScript;
+    [SerializeField] private GameObject candleHolder;
+    [SerializeField] private LightManager lightManager;
+
+
     private void Start()
     {
         TextAppear.Initialize();
-        quest = FindObjectOfType<Quest>();
     }
     public void Interact()
     {
@@ -25,29 +28,58 @@ public class WineGlass : MonoBehaviour, IInteractable
 
     public void OnInteractEnter()
     {
-        if (PickUpItem.FindObjectOfType<PickUpItem>().currentPickedUpItemName == "DaggerPivot")
+        if (canCut)
         {
             TextAppear.SetText("Press E to cut yourself");
             canCut = true;
         }
-        else Debug.Log("No dagger");
+
+
     }
 
     public void OnInteractExit()
     {
+
         TextAppear.RemoveText();
     }
 
     IEnumerator FillCup()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.5f);
+        gettingCut.Play();
         wine.SetActive(true);
-        quest.CompleteQuest();
-        doorScript.locked = false;
-        Debug.Log("Complete quest");
-        StartCoroutine(DestroyScripts());
+        cross.StartCrossAnim();
+        cross2.StartCrossAnim();
+        cross3.StartCrossAnim();
+
+        CloseAllLights();
+
+        FlashCandleLight();
+
+        
+
+
+
+    }
+    private void CloseAllLights()
+    {
+        lightManager.EraseLight();
     }
 
+    private void FlashCandleLight()
+    {
+        candleHolder.SetActive(false);
+        StartCoroutine(ToggleLight());
+
+    }
+
+    IEnumerator ToggleLight()
+    {
+        yield return new WaitForSeconds(1);
+        candleHolder.SetActive(true);
+        StartCoroutine(DestroyScripts());
+
+    }
     IEnumerator DestroyScripts()
     {
         yield return new WaitForSeconds(1f);
