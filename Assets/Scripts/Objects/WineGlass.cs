@@ -6,7 +6,12 @@ public class WineGlass : MonoBehaviour, IInteractable
 {
     [SerializeField] private GameObject wine;
     [SerializeField] private AudioSource gettingCut;
+    [SerializeField] private CrossScript cross, cross2, cross3;
     public bool canCut;
+
+    [SerializeField] private GameObject candleHolder;
+
+
 
     private void Start()
     {
@@ -28,12 +33,13 @@ public class WineGlass : MonoBehaviour, IInteractable
             TextAppear.SetText("Press E to cut yourself");
             canCut = true;
         }
-        
-        
+
+
     }
 
     public void OnInteractExit()
     {
+
         TextAppear.RemoveText();
     }
 
@@ -42,11 +48,28 @@ public class WineGlass : MonoBehaviour, IInteractable
         yield return new WaitForSeconds(0.5f);
         gettingCut.Play();
         wine.SetActive(true);
-        
+        cross.StartCrossAnim();
+        cross2.StartCrossAnim();
+        cross3.StartCrossAnim();
 
-        StartCoroutine(DestroyScripts());
+        FlashCandleLight();
+
+        
     }
 
+    private void FlashCandleLight()
+    {
+        candleHolder.SetActive(false);
+        StartCoroutine(ToggleLight());
+
+    }
+
+    IEnumerator ToggleLight()
+    {
+        yield return new WaitForSeconds(1);
+        candleHolder.SetActive(true);
+        StartCoroutine(DestroyScripts());
+    }
     IEnumerator DestroyScripts()
     {
         yield return new WaitForSeconds(1f);
