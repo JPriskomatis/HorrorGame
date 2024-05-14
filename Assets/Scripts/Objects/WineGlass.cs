@@ -10,7 +10,7 @@ public class WineGlass : MonoBehaviour, IInteractable
     public bool canCut;
 
     [SerializeField] private GameObject candleHolder;
-
+    [SerializeField] private LightManager lightManager;
 
 
     private void Start()
@@ -52,9 +52,18 @@ public class WineGlass : MonoBehaviour, IInteractable
         cross2.StartCrossAnim();
         cross3.StartCrossAnim();
 
+        CloseAllLights();
+
         FlashCandleLight();
 
         
+
+
+
+    }
+    private void CloseAllLights()
+    {
+        lightManager.EraseLight();
     }
 
     private void FlashCandleLight()
@@ -69,6 +78,7 @@ public class WineGlass : MonoBehaviour, IInteractable
         yield return new WaitForSeconds(1);
         candleHolder.SetActive(true);
         StartCoroutine(DestroyScripts());
+
     }
     IEnumerator DestroyScripts()
     {

@@ -3,6 +3,9 @@ using UnityEngine.UI;
 
 public class Door : MonoBehaviour, IInteractable
 {
+    [SerializeField] public bool isEnabled;
+
+
     [HideInInspector] public bool open;
 
     public float smooth = 2.0f;
@@ -82,7 +85,10 @@ public class Door : MonoBehaviour, IInteractable
 
     public void OnInteractEnter()
     {
-        TextAppear.SetText("Open");
+        if (isEnabled)
+        {
+            TextAppear.SetText("Open");
+        }
 
     }
 
