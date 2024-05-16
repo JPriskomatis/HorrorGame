@@ -46,6 +46,7 @@ public class PlayerThoughts : MonoBehaviour
         }
 
 
+
     }
 
     public void DoorLockedText()
@@ -142,5 +143,8 @@ public class PlayerThoughts : MonoBehaviour
         // Start a new coroutine to make the text disappear after 2 seconds
         textDisappearCoroutine = StartCoroutine(TextDisappearCoroutine());
     }
+
+
+    
 
 }
