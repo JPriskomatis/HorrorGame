@@ -11,6 +11,7 @@ public class WineGlass : MonoBehaviour, IInteractable
 
     [SerializeField] private GameObject candleHolder;
     [SerializeField] private LightManager lightManager;
+    [SerializeField] private Collider floorTriger;
 
 
     private void Start()
@@ -54,12 +55,18 @@ public class WineGlass : MonoBehaviour, IInteractable
 
         CloseAllLights();
 
+        EnableCollider();
         FlashCandleLight();
 
         
 
 
 
+    }
+
+    private void EnableCollider()
+    {
+        floorTriger.GetComponent<Collider>().enabled = true;
     }
     private void CloseAllLights()
     {
