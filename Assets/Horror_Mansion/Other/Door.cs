@@ -87,6 +87,7 @@ public class Door : MonoBehaviour, IInteractable
     {
         if (isEnabled)
         {
+            Debug.Log("Enter");
             TextAppear.SetText("Open");
         }
 
