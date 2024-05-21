@@ -12440,6 +12440,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1735881968994812323, guid: 379a841e57202644ea719c888f6cd9c5, type: 3}
+      propertyPath: EmissionModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1735881968994812334, guid: 379a841e57202644ea719c888f6cd9c5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1735881970164051498, guid: 379a841e57202644ea719c888f6cd9c5, type: 3}
       propertyPath: m_Range
       value: 3.25
@@ -12451,6 +12459,10 @@ PrefabInstance:
     - target: {fileID: 1735881970164051498, guid: 379a841e57202644ea719c888f6cd9c5, type: 3}
       propertyPath: m_Intensity
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2079138118064232500, guid: 379a841e57202644ea719c888f6cd9c5, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2079138118064232509, guid: 379a841e57202644ea719c888f6cd9c5, type: 3}
       propertyPath: m_Size.x
@@ -12476,6 +12488,10 @@ PrefabInstance:
       propertyPath: text
       value: 
       objectReference: {fileID: 793656377}
+    - target: {fileID: 2079138118064232651, guid: 379a841e57202644ea719c888f6cd9c5, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2079138118064232651, guid: 379a841e57202644ea719c888f6cd9c5, type: 3}
       propertyPath: textToDisplay
       value: Pickup
@@ -13829,6 +13845,11 @@ Transform:
   m_Father: {fileID: 1746976770}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!108 &266730567 stripped
+Light:
+  m_CorrespondingSourceObject: {fileID: 1735881970164051498, guid: 379a841e57202644ea719c888f6cd9c5, type: 3}
+  m_PrefabInstance: {fileID: 227883860}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &268283436
 GameObject:
   m_ObjectHideFlags: 0
@@ -22797,8 +22818,11 @@ MonoBehaviour:
   - {fileID: 1348218098}
   - {fileID: 1348218098}
   - {fileID: 1076340492}
+  - {fileID: 1076340492}
+  - {fileID: 266730567}
   lights:
   - {fileID: 68234958}
+  - {fileID: 851694104}
 --- !u!1001 &493945874
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33409,6 +33433,11 @@ Transform:
   m_Father: {fileID: 543450652185658893}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!1 &851694104 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1735881968994812334, guid: 379a841e57202644ea719c888f6cd9c5, type: 3}
+  m_PrefabInstance: {fileID: 227883860}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &855163689
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37837,6 +37866,7 @@ GameObject:
   - component: {fileID: 951868858}
   - component: {fileID: 951868859}
   - component: {fileID: 951868860}
+  - component: {fileID: 951868861}
   m_Layer: 9
   m_Name: Camera
   m_TagString: Untagged
@@ -37975,6 +38005,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &951868861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 951868852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67d72d4a3f683b14eab2de7bb2436bb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camTransform: {fileID: 951868853}
+  shakeDuration: 0
+  shakeAmount: 0.7
+  decreaseFactor: 1
 --- !u!1001 &953206624
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43112,6 +43158,7 @@ MonoBehaviour:
   candleHolder: {fileID: 1572215096}
   lightManager: {fileID: 493632007}
   floorTriger: {fileID: 56918460}
+  cameraShake: {fileID: 951868861}
 --- !u!136 &1107499917
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -56940,6 +56987,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 928779068}
     m_Modifications:
+    - target: {fileID: 895978165535170977, guid: c69b44597134ec641a6fcd16e6e90a85, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5082649363450993112, guid: c69b44597134ec641a6fcd16e6e90a85, type: 3}
       propertyPath: m_Name
       value: Wall_Lamp_01
