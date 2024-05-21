@@ -12,6 +12,7 @@ public class WineGlass : MonoBehaviour, IInteractable
     [SerializeField] private GameObject candleHolder;
     [SerializeField] private LightManager lightManager;
     [SerializeField] private Collider floorTriger;
+    [SerializeField] private CameraShake cameraShake;
 
 
     private void Start()
@@ -53,7 +54,10 @@ public class WineGlass : MonoBehaviour, IInteractable
         cross2.StartCrossAnim();
         cross3.StartCrossAnim();
 
+        cameraShake.shakeDuration = 1f;
+        
         CloseAllLights();
+        cameraShake.shakeAmount = 0.4f;
 
         EnableCollider();
         FlashCandleLight();

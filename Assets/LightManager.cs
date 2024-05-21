@@ -13,13 +13,16 @@ public class LightManager : MonoBehaviour
         {
             lightObjects[i].GetComponent<Light>().enabled = false;
         }
+
         for (int i = 0; i < lights.Length; i++)
         {
             ParticleSystem particleSystem = lights[i].GetComponent<ParticleSystem>();
             if (particleSystem != null)
             {
+                //particleSystem.gameObject.SetActive(false);
                 var emissionModule = particleSystem.emission;
                 emissionModule.enabled = false;
+                
             }
         }
     }
