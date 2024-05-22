@@ -54,7 +54,7 @@ public class WineGlass : MonoBehaviour, IInteractable
         cross2.StartCrossAnim();
         cross3.StartCrossAnim();
 
-        cameraShake.shakeDuration = 1f;
+        cameraShake.shakeDuration = 0.3f;
         
         CloseAllLights();
         cameraShake.shakeAmount = 0.4f;
