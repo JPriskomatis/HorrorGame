@@ -16,7 +16,7 @@ public class NoteWindow : MonoBehaviour, IInteractable
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            TextAppear.SetText("textToDisplay");
+            TextAppear.SetText(textToDisplay);
             nurseWindow.NurseDisappear();
             Destroy(this);
         }
