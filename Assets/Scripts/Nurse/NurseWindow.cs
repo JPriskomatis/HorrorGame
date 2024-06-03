@@ -6,6 +6,9 @@ public class NurseWindow : MonoBehaviour
 {
     [SerializeField] private AudioSource jumpscareAudio;
     [SerializeField] private Camera cam;
+    [SerializeField] private Transform player;
+
+    [SerializeField] private FadeBlack fadeBlack;
 
     public void NurseDisappear()
     {
@@ -13,6 +16,10 @@ public class NurseWindow : MonoBehaviour
         StartCoroutine(InitiateDisappear());
     }
 
+    private void Update()
+    {
+        transform.LookAt(player);
+    }
     private IEnumerator InitiateDisappear()
     {
         // Check if the player is looking at this GameObject
@@ -22,7 +29,9 @@ public class NurseWindow : MonoBehaviour
         }
 
         jumpscareAudio.Play();
+        fadeBlack.StartFade();
         yield return new WaitForSeconds(0.75f);
+        
 
         // Check if the GameObject is still active before destroying it
         if (gameObject != null && gameObject.activeSelf)
