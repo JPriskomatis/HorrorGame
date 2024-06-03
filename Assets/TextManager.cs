@@ -51,7 +51,7 @@ public class TextManager : MonoBehaviour
     IEnumerator ThirdTextDisappear()
     {
         yield return new WaitForSeconds(fadeText.fadeDuration);
-        textToDisplay.text = "For the best experience, we recommend playing with headphones.";
+        textToDisplay.text = "For the best experience, we recommend playing with <b>headphones</b>.";
         fadeText.FadeInText();
         yield return new WaitForSeconds(fadeText.fadeDuration);
         fadeText.FadeOutText();
