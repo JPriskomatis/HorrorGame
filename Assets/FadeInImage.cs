@@ -64,7 +64,6 @@ public class FadeInImage : MonoBehaviour
             yield return null;
         }
 
-        yield return new WaitForSeconds(1.5f);
         textToDisplay.SetActive(true);
     }
 }
