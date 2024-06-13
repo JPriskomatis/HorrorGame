@@ -14259,7 +14259,7 @@ PrefabInstance:
     - target: {fileID: 3900105592034643540, guid: e0ae3f00a4defe44b867b0adbb30f86f, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1090369970}
     - target: {fileID: 3900105592034643540, guid: e0ae3f00a4defe44b867b0adbb30f86f, type: 3}
       propertyPath: screech
       value: 
@@ -38039,7 +38039,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camTransform: {fileID: 951868853}
   shakeDuration: 0
-  shakeAmount: 0.7
+  shakeAmount: 0.3
   decreaseFactor: 1
 --- !u!1001 &953206624
 PrefabInstance:
@@ -67331,7 +67331,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 849240e108d0f054ebc4b8d62f0873b4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.983
+      value: 0.94362754
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 849240e108d0f054ebc4b8d62f0873b4, type: 3}
       propertyPath: m_LocalPosition.z

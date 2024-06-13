@@ -15,7 +15,7 @@ public class TotalHorrorScript : MonoBehaviour
     public Transform player;
     public float speed = 5f;
     [SerializeField] private float lookSpeed = 10f;
-    [SerializeField] private float activationDistance = 0.1f; // Distance threshold for activating the function
+    [SerializeField] private float activationDistance = 0.3f; // Distance threshold for activating the function
     [SerializeField] private float fadeDuration = 5f; // Duration of the fade-in effect
     [SerializeField] private GameObject floor;
 
@@ -80,7 +80,7 @@ public class TotalHorrorScript : MonoBehaviour
     private IEnumerator StartShake()
     {
         yield return new WaitForSeconds(0.3f);
-        cameraShake.shakeDuration = 1f;
+        cameraShake.shakeDuration = 0.5f;
     }
     private void DeactivateGameObject()
     {
