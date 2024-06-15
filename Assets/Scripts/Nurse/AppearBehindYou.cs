@@ -6,7 +6,7 @@ public class AppearBehindYou : MonoBehaviour
     [SerializeField] private GameObject nursePrefab;   // Reference to the nurse prefab
     [SerializeField] private GameObject player;        // Reference to the player GameObject
 
-    private float offsetDistance = 2.0f;                // Distance behind the player
+    private float offsetDistance = 1f;                // Distance behind the player
 
     private void Update()
     {
