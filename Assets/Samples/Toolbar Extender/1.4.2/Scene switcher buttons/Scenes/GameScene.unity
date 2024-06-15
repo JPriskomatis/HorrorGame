@@ -42605,7 +42605,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6e0202090f870d4b821b96cf97754a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nurse: {fileID: 2132781242024797146, guid: bc4a944e871296a46833cdec39f250fd, type: 3}
+  nursePrefab: {fileID: 2132781242024797146, guid: bc4a944e871296a46833cdec39f250fd, type: 3}
   player: {fileID: 1090369967}
 --- !u!1001 &1101304986
 PrefabInstance:
