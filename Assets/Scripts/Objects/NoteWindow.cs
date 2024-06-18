@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class NoteWindow : MonoBehaviour, IInteractable
 {
+    [SerializeField] private GameObject nurse;
     [SerializeField] private NurseWindow nurseWindow;
     [SerializeField] private string textToDisplay;
 
@@ -17,6 +18,8 @@ public class NoteWindow : MonoBehaviour, IInteractable
         if (Input.GetKeyDown(KeyCode.E))
         {
             TextAppear.SetText(textToDisplay);
+
+            nurse.GetComponent<NurseWindow>().enabled = true;
             nurseWindow.NurseDisappear();
             Destroy(this);
         }
