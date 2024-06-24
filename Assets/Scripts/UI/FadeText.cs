@@ -6,7 +6,8 @@ using UnityEngine;
 public class FadeText : MonoBehaviour
 {
     public TextMeshProUGUI textMeshPro;
-    [SerializeField] private float fadeDuration = 2f;
+    [SerializeField] public float fadeDuration = 2f;
+    [SerializeField] public float fadeOutDuration = 2f;
 
 
 
@@ -64,10 +65,10 @@ public class FadeText : MonoBehaviour
         float timer = 0f;
         Color startColor = textMeshPro.color;
 
-        while (timer < fadeDuration)
+        while (timer < fadeOutDuration)
         {
             // Calculate the lerp value based on the time passed
-            float progress = timer / fadeDuration;
+            float progress = timer / fadeOutDuration;
 
             // Interpolate the alpha value
             float alpha = Mathf.Lerp(1f, 0f, progress);

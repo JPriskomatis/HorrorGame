@@ -5,7 +5,9 @@ using UnityEngine;
 
 public class NoteWindow : MonoBehaviour, IInteractable
 {
+    [SerializeField] private GameObject nurse;
     [SerializeField] private NurseWindow nurseWindow;
+    [SerializeField] private string textToDisplay;
 
     private void Start()
     {
@@ -15,7 +17,9 @@ public class NoteWindow : MonoBehaviour, IInteractable
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            TextAppear.SetText("Notes about how special herbs can put someone in a coma-like state");
+            TextAppear.SetText(textToDisplay);
+
+            nurse.GetComponent<NurseWindow>().enabled = true;
             nurseWindow.NurseDisappear();
             Destroy(this);
         }

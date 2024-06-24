@@ -22,7 +22,6 @@ public class Movement : MonoBehaviour
     private string floorTag;
 
 
-    private bool isFirstCollision = true;
 
     public float jumpHeight = 6f;
     float velocityY;
@@ -38,6 +37,11 @@ public class Movement : MonoBehaviour
 
     //Get the current State of the game;
     private UIController stateController;
+
+
+    [SerializeField] private Animator animator; // Add a reference to the Animator
+    private bool isHiding = false;
+
 
     void Start()
     {
@@ -89,7 +93,7 @@ public class Movement : MonoBehaviour
 
         cameraCap -= currentMouseDelta.y * mouseSensitivity;
 
-        cameraCap = Mathf.Clamp(cameraCap, -90.0f, 90.0f);
+        cameraCap = Mathf.Clamp(cameraCap, -50.0f, 50.0f);
 
         playerCamera.localEulerAngles = Vector3.right * cameraCap;
 
@@ -153,6 +157,25 @@ public class Movement : MonoBehaviour
 
             }
         }
+    }
+
+    public void Hide(GameObject floor)
+    {
+        //TODO: Fix this damn thing please;
+        this.GetComponent<CharacterController>().enabled = false;
+        this.GetComponent<Rigidbody>().detectCollisions = false;
+        this.GetComponent<Rigidbody>().useGravity = false;
+
+
+        floor.GetComponent<BoxCollider>().enabled = false;
+        isHiding = true;
+        animator.SetBool("isHiding", true);
+    }
+
+    public void StopHiding()
+    {
+        isHiding = false;
+        animator.SetBool("isHiding", false);
     }
 
 }
