@@ -29,6 +29,7 @@ public class CatchPlayer : MonoBehaviour
             if (Vector3.Distance(this.transform.position, player.transform.position) < minDistance)
             {
                 anim.SetTrigger("attack");
+                Debug.Log("Player Died");
                 //Optionally break the coroutine if the attack is a one-time event;
                 break;
             }
