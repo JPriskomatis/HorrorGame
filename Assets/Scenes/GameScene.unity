@@ -37074,7 +37074,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3572845590329991273, guid: e0ae3f00a4defe44b867b0adbb30f86f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -49.94
+      value: -49.11
       objectReference: {fileID: 0}
     - target: {fileID: 3572845590329991273, guid: e0ae3f00a4defe44b867b0adbb30f86f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -37186,7 +37186,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3900105592034643542, guid: e0ae3f00a4defe44b867b0adbb30f86f, type: 3}
       propertyPath: MaxDistance
-      value: 999
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 3900105592034643543, guid: e0ae3f00a4defe44b867b0adbb30f86f, type: 3}
       propertyPath: Loop
@@ -37817,13 +37817,13 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 4ba1b3de55d7ddf418f5c27fbf7f951e, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
+  m_Volume: 0.58
+  m_Pitch: 2.35
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 127
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -37861,7 +37861,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -68297,7 +68297,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 849240e108d0f054ebc4b8d62f0873b4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -28.128
+      value: -35.354
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 849240e108d0f054ebc4b8d62f0873b4, type: 3}
       propertyPath: m_LocalRotation.w
