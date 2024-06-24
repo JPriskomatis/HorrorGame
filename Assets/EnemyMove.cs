@@ -36,14 +36,13 @@ public class EnemyMove : MonoBehaviour
     {
         if (player != null && agent != null)
         {
-            anim.SetTrigger("walk");
+            
             transform.LookAt(player);
             agent.SetDestination(player.position); // Set the destination of the agent to the player's position
 
-            if(Vector3.Distance(this.transform.position, player.transform.position) < minDistance)
-            {
-                anim.SetTrigger("attack");
-            }
+            anim.SetTrigger("walk");
+
+
         }
     }
 }
