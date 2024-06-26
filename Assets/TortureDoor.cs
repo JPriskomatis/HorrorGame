@@ -6,9 +6,13 @@ public class TortureDoor : MonoBehaviour
     public Animator anim;
     public AudioSource audioSource;
 
+    private bool slamming;
+
+    [SerializeField] private GameObject totalHorrorScript;
 
     void Start()
     {
+        slamming = true;
         StartCoroutine(SlamCoroutine());
     }
 
@@ -45,5 +49,13 @@ public class TortureDoor : MonoBehaviour
     public void PlayAudio()
     {
         audioSource.Play();
+    }
+
+    public void OpenDoor()
+    {
+        slamming = false;
+
+        anim.SetBool("openDoor", true);
+        totalHorrorScript.SetActive(true);
     }
 }
