@@ -26,6 +26,7 @@ public class BottleFall : MonoBehaviour
             //Activate TotalHorror monster;
             totalHorror.SetActive(true);
 
+            
             tortureDoor.OpenDoor();
 
             Destroy(thisScript);

@@ -14,6 +14,7 @@ public class WineGlass : MonoBehaviour, IInteractable
     [SerializeField] private Collider floorTriger;
     [SerializeField] private CameraShake cameraShake;
 
+    [SerializeField] private TortureDoor tortureDoor;
 
     private void Start()
     {
@@ -88,6 +89,11 @@ public class WineGlass : MonoBehaviour, IInteractable
     {
         yield return new WaitForSeconds(1);
         candleHolder.SetActive(true);
+
+
+        //We active the torture room door script to begin the animation & slam audio;
+        tortureDoor.GetComponent<TortureDoor>().enabled = true;
+
         StartCoroutine(DestroyScripts());
 
     }

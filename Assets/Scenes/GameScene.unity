@@ -34502,7 +34502,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2391347322418253444}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aeead5429e796c74c815703360b8bcd7, type: 3}
   m_Name: 
@@ -44687,6 +44687,7 @@ MonoBehaviour:
   lightManager: {fileID: 493632007}
   floorTriger: {fileID: 56918460}
   cameraShake: {fileID: 951868861}
+  tortureDoor: {fileID: 871078571}
 --- !u!136 &1107499917
 CapsuleCollider:
   m_ObjectHideFlags: 0
