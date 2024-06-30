@@ -14539,6 +14539,7 @@ MonoBehaviour:
   anim: {fileID: 838996558}
   bookAnim: {fileID: 1101424054}
   doorCreakingAudio: {fileID: 280350481}
+  doorToOpen: {fileID: 838996564}
 --- !u!82 &280350481
 AudioSource:
   m_ObjectHideFlags: 0
@@ -33404,7 +33405,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4162366dd8f897d4da8955cfc0504b1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isEnabled: 0
+  isEnabled: 1
   open: 0
   smooth: 2
   DoorOpenAngle: 90
@@ -33412,7 +33413,7 @@ MonoBehaviour:
   closeAudio: {fileID: 91881535}
   openAudio: {fileID: 1579124690}
   lockedAudio: {fileID: 1413941598}
-  locked: 0
+  locked: 1
 --- !u!208 &838996570
 NavMeshObstacle:
   m_ObjectHideFlags: 0
