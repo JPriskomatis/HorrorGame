@@ -31,6 +31,9 @@ public class KeyS : MonoBehaviour, IInteractable
     {
         yield return new WaitForSeconds(1f);
         TextAppear.SetText("2nd floor 1 door");
+
+        this.gameObject.SetActive(false);
+
         yield return new WaitForSeconds(2f);
         TextAppear.RemoveText();
 

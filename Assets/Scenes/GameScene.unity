@@ -44999,6 +44999,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 687956436444696183, guid: 8e593afa8c38ae84fa6f2c5030d04ea5, type: 3}
+      propertyPath: isEnabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 687956436444696183, guid: 8e593afa8c38ae84fa6f2c5030d04ea5, type: 3}
       propertyPath: openAudio
       value: 
       objectReference: {fileID: 1579124690}
@@ -45013,6 +45017,22 @@ PrefabInstance:
     - target: {fileID: 687956436444696183, guid: 8e593afa8c38ae84fa6f2c5030d04ea5, type: 3}
       propertyPath: rotationTolerance
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 920540589027151962, guid: 8e593afa8c38ae84fa6f2c5030d04ea5, type: 3}
+      propertyPath: m_Size.x
+      value: 1.960886
+      objectReference: {fileID: 0}
+    - target: {fileID: 920540589027151962, guid: 8e593afa8c38ae84fa6f2c5030d04ea5, type: 3}
+      propertyPath: m_Size.z
+      value: 2.0513363
+      objectReference: {fileID: 0}
+    - target: {fileID: 920540589027151962, guid: 8e593afa8c38ae84fa6f2c5030d04ea5, type: 3}
+      propertyPath: m_Center.x
+      value: -0.29360485
+      objectReference: {fileID: 0}
+    - target: {fileID: 920540589027151962, guid: 8e593afa8c38ae84fa6f2c5030d04ea5, type: 3}
+      propertyPath: m_Center.z
+      value: -0.70372677
       objectReference: {fileID: 0}
     - target: {fileID: 2393882159478683488, guid: 8e593afa8c38ae84fa6f2c5030d04ea5, type: 3}
       propertyPath: m_Materials.Array.data[1]
