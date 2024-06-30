@@ -6,7 +6,7 @@ public class Door : MonoBehaviour, IInteractable
     [SerializeField] public bool isEnabled;
 
 
-    [HideInInspector] public bool open;
+    public bool open;
 
     public float smooth = 2.0f;
     public float DoorOpenAngle = 90.0f;
@@ -19,7 +19,7 @@ public class Door : MonoBehaviour, IInteractable
     [SerializeField] private AudioSource openAudio;
     [SerializeField] private AudioSource lockedAudio;
 
-    [SerializeField] private bool locked;
+    [SerializeField] public bool locked;
 
     void Start()
     {

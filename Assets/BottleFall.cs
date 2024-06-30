@@ -8,6 +8,9 @@ public class BottleFall : MonoBehaviour
     [SerializeField] private GameObject piecesToDis;
 
     [SerializeField] private AudioSource bottleAudio;
+    [SerializeField] private GameObject totalHorror;
+
+    [SerializeField] private TortureDoor tortureDoor;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -20,6 +23,12 @@ public class BottleFall : MonoBehaviour
 
 
             Component thisScript = this.GetComponent<BottleFall>();
+            //Activate TotalHorror monster;
+            totalHorror.SetActive(true);
+
+            
+            tortureDoor.OpenDoor();
+
             Destroy(thisScript);
         }
     }
