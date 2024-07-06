@@ -31,7 +31,7 @@ public class BookShelf : MonoBehaviour, IInteractable
                 anim.SetTrigger("move");
                 audioSource.Play();
 
-                btn.GetComponent<SwitchButton>().enabled = true;
+                btn.GetComponent<SphereCollider>().enabled = true;
 
                 Component scriptToDestroy = this.GetComponent<BookShelf>();
                 Destroy(scriptToDestroy);
