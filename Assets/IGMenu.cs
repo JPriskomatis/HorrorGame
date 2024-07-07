@@ -2,6 +2,8 @@ using Newtonsoft.Json.Bson;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class IGMenu : MonoBehaviour
 {
@@ -60,6 +62,22 @@ public class IGMenu : MonoBehaviour
         igmenuPanel.SetActive(false);
 
         isOpen = false;
+    }
+
+    public void ResumeBtn()
+    {
+        
+
+        //Deselect the button;
+        if (EventSystem.current.currentSelectedGameObject != null)
+        {
+
+            // Set the currently selected GameObject to null to deselect it
+            EventSystem.current.SetSelectedGameObject(null);
+        }
+
+        
+        CloseMenu();
     }
 
     //Open Settings submenu;
