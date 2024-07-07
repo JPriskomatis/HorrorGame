@@ -26703,6 +26703,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   igmenuPanel: {fileID: 502277622}
+  movement: {fileID: 1090369967}
 --- !u!1001 &580184717
 PrefabInstance:
   m_ObjectHideFlags: 0

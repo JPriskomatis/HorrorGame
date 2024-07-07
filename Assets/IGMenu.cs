@@ -8,6 +8,8 @@ public class IGMenu : MonoBehaviour
 
     bool isOpen;
 
+    [SerializeField] GameObject movement;
+
     private void Update()
     {
         if (Input.GetKeyUp(KeyCode.Escape))
@@ -31,6 +33,7 @@ public class IGMenu : MonoBehaviour
     public void OpenMenu()
     {
         igmenuPanel.SetActive(true);
+        movement.GetComponent<Movement>().enabled = false;
 
         //Reveal Cursor;
         Cursor.lockState = CursorLockMode.None;
@@ -43,6 +46,9 @@ public class IGMenu : MonoBehaviour
     {
         //Hide cursor;
         Cursor.lockState = CursorLockMode.Locked;
+
+        movement.GetComponent<Movement>().enabled = true;
+
         igmenuPanel.SetActive(false);
 
         isOpen = false;
