@@ -1,3 +1,4 @@
+using Newtonsoft.Json.Bson;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -36,7 +37,11 @@ public class IGMenu : MonoBehaviour
         movement.GetComponent<Movement>().enabled = false;
 
         //Reveal Cursor;
+
+        Cursor.visible = true;
+
         Cursor.lockState = CursorLockMode.None;
+
 
         isOpen = true;
 
@@ -46,11 +51,18 @@ public class IGMenu : MonoBehaviour
     {
         //Hide cursor;
         Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+
 
         movement.GetComponent<Movement>().enabled = true;
 
         igmenuPanel.SetActive(false);
 
         isOpen = false;
+    }
+
+    public void DebugTest()
+    {
+        Debug.Log("TEST");
     }
 }
