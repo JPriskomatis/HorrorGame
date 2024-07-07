@@ -5,23 +5,19 @@ using UnityEngine;
 public class VideoSettings : MonoBehaviour
 {
     [SerializeField] GameObject videoSettings;
-    [SerializeField] AudioSettings audioSettings;
+    [SerializeField] GameObject audioSettings;
 
 
     public void CloseVideo()
     {
         videoSettings.SetActive(false);
-        audioSettings.OpenAudio();
+        audioSettings.SetActive(true);
     }
 
     public void OpenVideo()
     {
         videoSettings.SetActive(true);
-        audioSettings.CloseAudio();
+        audioSettings.SetActive(false);
     }
 
-    public void SetExplanationText()
-    {
-
-    }
 }

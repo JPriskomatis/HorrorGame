@@ -6,7 +6,7 @@ using UnityEngine;
 public class AudioSettings : MonoBehaviour
 {
     [SerializeField] GameObject audioContainer;
-    [SerializeField] VideoSettings videoContainer;
+    [SerializeField] GameObject videoContainer;
 
 
 
@@ -14,11 +14,11 @@ public class AudioSettings : MonoBehaviour
     public void CloseAudio()
     {
         audioContainer.SetActive(false);
-        videoContainer.OpenVideo();
+        videoContainer.SetActive(true);
     }
     public void OpenAudio()
     {
         audioContainer.SetActive(true);
-        videoContainer.CloseVideo();
+        videoContainer.SetActive(false);
     }
 }
