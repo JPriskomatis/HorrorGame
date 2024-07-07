@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 /**
@@ -49,6 +50,7 @@ public class TextContent : MonoBehaviour, IInteractable
 
     public void ReadTextContent()
     {
+        
         newNotes.TransferStrings(textToDisplay);
         newNotes.TransferAudios(speechToDisplay);
 
