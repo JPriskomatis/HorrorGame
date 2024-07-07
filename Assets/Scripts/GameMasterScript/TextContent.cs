@@ -39,7 +39,6 @@ public class TextContent : MonoBehaviour, IInteractable
 
     public void OnInteractEnter()
     {
-        Debug.Log("helo");
         TextAppear.SetText("Read");
     }
 

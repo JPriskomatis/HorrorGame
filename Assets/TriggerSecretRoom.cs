@@ -9,6 +9,7 @@ public class TriggerSecretRoom : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
+            Debug.Log("Player");
             anim.SetTrigger("close");
         }
     }

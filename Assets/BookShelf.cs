@@ -11,6 +11,7 @@ public class BookShelf : MonoBehaviour, IInteractable
     bool firstInteract = true;
 
     [SerializeField] AudioSource audioSource;
+    [SerializeField] AudioSource switchAudio;
 
     public void Interact()
     {
@@ -22,6 +23,7 @@ public class BookShelf : MonoBehaviour, IInteractable
 
 
                 TextAppear.SetText("There's a switch there");
+                switchAudio.Play();
                 StartCoroutine(TextForSwitch());
                 
             }
