@@ -6,6 +6,7 @@ using UnityEngine;
 public class IGMenu : MonoBehaviour
 {
     [SerializeField] GameObject igmenuPanel;
+    [SerializeField] GameObject settingsPanel;
 
     bool isOpen;
 
@@ -61,8 +62,15 @@ public class IGMenu : MonoBehaviour
         isOpen = false;
     }
 
-    public void DebugTest()
+    //Open Settings submenu;
+    public void OpenSettings()
     {
-        Debug.Log("TEST");
+        settingsPanel.SetActive(true);
+    }
+
+    //Close Settings submenu;
+    public void CloseSettings()
+    {
+        settingsPanel.SetActive(false);
     }
 }

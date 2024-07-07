@@ -5,8 +5,14 @@ using UnityEngine;
 
 public class IGMenuBtn : MonoBehaviour
 {
-    public void ChangeTxtColor()
+    [SerializeField] Color setSelectedColor;
+    [SerializeField] Color setDeselectedColor;
+    public void SetSelectedTxtColor()
     {
-        this.GetComponentInChildren<TextMeshProUGUI>().color = Color.black;
+        this.GetComponentInChildren<TextMeshProUGUI>().color = setSelectedColor;
+    }
+    public void SetDeselectedTxtColor()
+    {
+        this.GetComponentInChildren<TextMeshProUGUI>().color = setDeselectedColor;
     }
 }
