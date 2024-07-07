@@ -8004,7 +8004,7 @@ GameObject:
   - component: {fileID: 72256041}
   - component: {fileID: 72256044}
   m_Layer: 5
-  m_Name: Button (2)
+  m_Name: OptionsBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14496,7 +14496,7 @@ GameObject:
   - component: {fileID: 245513371}
   - component: {fileID: 245513374}
   m_Layer: 5
-  m_Name: Button (3)
+  m_Name: QuitGameBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16041,7 +16041,7 @@ GameObject:
   - component: {fileID: 286980523}
   - component: {fileID: 286980526}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: SaveGameBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -51583,8 +51583,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 128.11183, y: -156.20001}
-  m_SizeDelta: {x: 401.7934, y: 217.6771}
+  m_AnchoredPosition: {x: 128.11183, y: -179.4076}
+  m_SizeDelta: {x: 401.7934, y: 358.8148}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1188440344
 PrefabInstance:
@@ -55808,6 +55808,7 @@ GameObject:
   - component: {fileID: 1313912925}
   - component: {fileID: 1313912926}
   - component: {fileID: 1313912927}
+  - component: {fileID: 1313912928}
   m_Layer: 5
   m_Name: VolumeSlider
   m_TagString: Untagged
@@ -55837,7 +55838,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -16.683594}
+  m_AnchoredPosition: {x: 0, y: -40}
   m_SizeDelta: {x: 312.4197, y: 33.367203}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1313912926
@@ -55885,7 +55886,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 686905813}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 100
   m_WholeNumbers: 0
   m_Value: 0.071
   m_OnValueChanged:
@@ -55915,8 +55916,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a55101343d76e44091f99ae3a3c013f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textToDisplay: Volume text
+  textToDisplay: Adjusting the volume setting increases or decreases the sound level,
+    allowing you to control how loud or soft the audio is
   explanationText: {fileID: 2143788250}
+--- !u!114 &1313912928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1313912924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b67a3a6e88977ad469c7b0298f7fa1b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volumeSlider: {fileID: 1313912926}
+  volumeText: {fileID: 940555240}
 --- !u!1 &1317556005
 GameObject:
   m_ObjectHideFlags: 0
@@ -63775,7 +63791,7 @@ GameObject:
   - component: {fileID: 1390710831}
   - component: {fileID: 1390710834}
   m_Layer: 5
-  m_Name: Button
+  m_Name: ResumeBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -63897,6 +63913,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1450969568}
         m_TargetAssemblyTypeName: IGMenu, Assembly-CSharp
         m_MethodName: ResumeBtn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1450969568}
+        m_TargetAssemblyTypeName: IGMenu, Assembly-CSharp
+        m_MethodName: CloseSettings
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -64079,8 +64107,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -10, y: -62.228806}
-  m_SizeDelta: {x: 630.1996, y: 90.4576}
+  m_AnchoredPosition: {x: -28.03, y: -78}
+  m_SizeDelta: {x: 666.26, y: 155.3997}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1405969322
 GameObject:
@@ -75019,7 +75047,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00090027, y: 91.442566}
+  m_AnchoredPosition: {x: 0.00090027, y: 145}
   m_SizeDelta: {x: 722.32, y: 41.1149}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1735046087
@@ -75060,7 +75088,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a55101343d76e44091f99ae3a3c013f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textToDisplay: Subtitles Text
+  textToDisplay: Checking the subtitles box will display subtitles throughout the
+    game whenever someone talks.
   explanationText: {fileID: 2143788250}
 --- !u!1001 &1737190620
 PrefabInstance:
@@ -86344,7 +86373,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 358, y: 54}
+  m_AnchoredPosition: {x: 276, y: 54}
   m_SizeDelta: {x: 184.6758, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1947272766
@@ -86462,8 +86491,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 42
+  m_fontSizeBase: 42
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -86549,7 +86578,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00090027, y: 20}
+  m_AnchoredPosition: {x: 0.00090027, y: 73.557434}
   m_SizeDelta: {x: 722.32, y: 41.1149}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1949717946
@@ -86590,7 +86619,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a55101343d76e44091f99ae3a3c013f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textToDisplay: Voice acting text
+  textToDisplay: Checking the voice acting box will enable the voice acting throughout
+    the game whenever the player talks.
   explanationText: {fileID: 2143788250}
 --- !u!1001 &1950448777
 PrefabInstance:
@@ -93873,7 +93903,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
