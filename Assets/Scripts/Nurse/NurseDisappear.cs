@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class NurseDisappear : MonoBehaviour
 {
+    [SerializeField] bool fRoom;
 
     [SerializeField] private GameObject candleFlame;
     [SerializeField] private AudioSource jumpscare;
+
     public void DisappearNurse()
     {
         StartCoroutine(Disappear());
@@ -23,6 +25,10 @@ public class NurseDisappear : MonoBehaviour
         yield return new WaitForSeconds(1.25f);
 
         candleFlame.SetActive(false);
+
+
+
         this.gameObject.SetActive(false);
+
     }
 }

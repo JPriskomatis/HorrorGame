@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class FadeBlack : MonoBehaviour
 {
+    
     public void StartFade()
     {
         StartCoroutine(DoFade());

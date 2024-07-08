@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting.FullSerializer;
 using UnityEngine;
+using UnityEngine.Rendering.PostProcessing;
 
 public class NurseWindow : MonoBehaviour
 {
@@ -9,6 +11,8 @@ public class NurseWindow : MonoBehaviour
     [SerializeField] private Transform player;
 
     [SerializeField] private FadeBlack fadeBlack;
+
+
 
     public void NurseDisappear()
     {
@@ -54,6 +58,7 @@ public class NurseWindow : MonoBehaviour
             //Debug.Log("Hit: " + hit.collider.gameObject.name);
             // Check if the hit GameObject is this GameObject
             Debug.Log(hit.collider.gameObject.name);
+
             return hit.collider.gameObject == gameObject;
         }
         return false;
