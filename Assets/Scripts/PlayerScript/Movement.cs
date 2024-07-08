@@ -43,6 +43,7 @@ public class Movement : MonoBehaviour
     private bool isHiding = false;
 
 
+
     void Start()
     {
         controller = GetComponent<CharacterController>();
