@@ -44,7 +44,7 @@ public class NurseWindow : MonoBehaviour
     private bool IsPlayerLookingAt()
     {
         // Layer mask to only hit colliders on the "Default" layer and the "Nurse_LP" layer
-        int layerMask = LayerMask.GetMask("monster", "nurse_LP");
+        int layerMask = LayerMask.GetMask("monster", "nurse_lp");
 
         // Raycast from the camera to this GameObject, ignoring all other layers
         Ray ray = cam.ScreenPointToRay(Input.mousePosition);
@@ -53,6 +53,7 @@ public class NurseWindow : MonoBehaviour
         {
             //Debug.Log("Hit: " + hit.collider.gameObject.name);
             // Check if the hit GameObject is this GameObject
+            Debug.Log(hit.collider.gameObject.name);
             return hit.collider.gameObject == gameObject;
         }
         return false;

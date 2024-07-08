@@ -10,6 +10,8 @@ public class FinalRoom : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             nurse.SetActive(true);
+            nurse.GetComponent<NurseWindow>().enabled = true;
+            nurse.GetComponent<NurseWindow>().NurseDisappear();
         }
     }
 }
