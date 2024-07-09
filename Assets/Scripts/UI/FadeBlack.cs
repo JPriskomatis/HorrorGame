@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class FadeBlack : MonoBehaviour
 {
+    
     public void StartFade()
     {
         StartCoroutine(DoFade());
@@ -20,7 +21,7 @@ public class FadeBlack : MonoBehaviour
             canvasGroup.alpha+= Time.deltaTime*3;
             yield return null;
         }
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.75f);
 
         while(canvasGroup.alpha > 0)
         {

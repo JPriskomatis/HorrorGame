@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting.FullSerializer;
 using UnityEngine;
+using UnityEngine.Rendering.PostProcessing;
 
 public class NurseWindow : MonoBehaviour
 {
@@ -9,6 +11,8 @@ public class NurseWindow : MonoBehaviour
     [SerializeField] private Transform player;
 
     [SerializeField] private FadeBlack fadeBlack;
+
+
 
     public void NurseDisappear()
     {
@@ -44,7 +48,7 @@ public class NurseWindow : MonoBehaviour
     private bool IsPlayerLookingAt()
     {
         // Layer mask to only hit colliders on the "Default" layer and the "Nurse_LP" layer
-        int layerMask = LayerMask.GetMask("monster", "nurse_LP");
+        int layerMask = LayerMask.GetMask("monster", "nurse_lp");
 
         // Raycast from the camera to this GameObject, ignoring all other layers
         Ray ray = cam.ScreenPointToRay(Input.mousePosition);
@@ -53,6 +57,8 @@ public class NurseWindow : MonoBehaviour
         {
             //Debug.Log("Hit: " + hit.collider.gameObject.name);
             // Check if the hit GameObject is this GameObject
+            Debug.Log(hit.collider.gameObject.name);
+
             return hit.collider.gameObject == gameObject;
         }
         return false;
