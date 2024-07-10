@@ -5,6 +5,8 @@ using UnityEngine;
 public class FinalRoom : MonoBehaviour
 {
     [SerializeField] GameObject nurse;
+
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
