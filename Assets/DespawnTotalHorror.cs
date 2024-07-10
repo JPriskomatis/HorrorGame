@@ -7,6 +7,8 @@ public class DespawnTotalHorror : MonoBehaviour
     [SerializeField] private Door door;
     [SerializeField] private GameObject totalHorror;
 
+    [SerializeField] OldManScript oldManScript;
+
     private bool canDespawn;
 
     private void Start()
@@ -18,7 +20,9 @@ public class DespawnTotalHorror : MonoBehaviour
         if (door.open)
         {
             canDespawn = true;
-            
+            oldManScript.gameObject.SetActive(true);
+
+
         }
         if(canDespawn && !door.open)
         {
